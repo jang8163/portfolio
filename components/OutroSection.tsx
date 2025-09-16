@@ -96,50 +96,37 @@ export default function OutroSection() {
 
       {/* 간단한 파티클 효과 */}
       <div className="absolute inset-0 pointer-events-none">
-        {[...Array(15)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1 h-1 bg-white rounded-full"
-            style={{
-              left: `${20 + Math.random() * 60}%`,
-              top: `${20 + Math.random() * 60}%`,
-            }}
-            animate={{
-              opacity: [0, 0.6, 0],
-              scale: [0, 1, 0],
-              y: [0, -30, 0],
-            }}
-            transition={{
-              duration: 4 + Math.random() * 2,
-              repeat: Infinity,
-              delay: Math.random() * 3,
-              ease: "easeInOut"
-            }}
-          />
-        ))}
+        {[...Array(15)].map((_, i) => {
+          // 고정된 위치 계산 (Math.random() 대신 인덱스 기반)
+          const left = 20 + (i * 4) % 60;
+          const top = 20 + (i * 3) % 60;
+          const duration = 4 + (i % 3);
+          const delay = (i % 4) * 0.5;
+          
+          return (
+            <motion.div
+              key={i}
+              className="absolute w-1 h-1 bg-white rounded-full"
+              style={{
+                left: `${left}%`,
+                top: `${top}%`,
+              }}
+              animate={{
+                opacity: [0, 0.6, 0],
+                scale: [0, 1, 0],
+                y: [0, -30, 0],
+              }}
+              transition={{
+                duration,
+                repeat: Infinity,
+                delay,
+                ease: "easeInOut"
+              }}
+            />
+          );
+        })}
       </div>
 
-      {/* 스크롤 표시 */}
-      <motion.div 
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        initial={{ opacity: 0 }}
-        animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ duration: 1, delay: 2 }}
-      >
-        <motion.div 
-          className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center"
-          animate={{ 
-            borderColor: ["rgba(255,255,255,0.3)", "rgba(255,255,255,0.6)", "rgba(255,255,255,0.3)"]
-          }}
-          transition={{ duration: 2, repeat: Infinity }}
-        >
-          <motion.div 
-            className="w-1 h-2 bg-white/50 rounded-full mt-2"
-            animate={{ y: [0, 16, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          />
-        </motion.div>
-      </motion.div>
     </section>
   );
 }

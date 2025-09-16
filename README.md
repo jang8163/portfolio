@@ -2,7 +2,7 @@
 
 > **프론트엔드 개발자 장원준의 개인 포트폴리오 웹사이트**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Portfolio-blue?style=for-the-badge&logo=vercel)](https://your-portfolio-url.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Portfolio-blue?style=for-the-badge&logo=vercel)](https://portfolio-git-main-jangwonjuns-projects.vercel.app)
 [![Next.js](https://img.shields.io/badge/Next.js-15.5.2-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
@@ -44,7 +44,7 @@
 
 1. **저장소 클론**
 ```bash
-git clone https://github.com/your-username/portfolio.git
+git clone https://github.com/jang8163/portfolio.git
 cd portfolio
 ```
 
@@ -134,7 +134,7 @@ portfolio/
 
 이 프로젝트는 Vercel을 통해 배포됩니다.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/portfolio)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/jang8163/portfolio)
 
 ### 배포 단계
 1. GitHub에 코드 푸시
@@ -145,8 +145,8 @@ portfolio/
 ## 📞 연락처
 
 - **이메일**: helios8163@gmail.com
-- **GitHub**: [your-github-username](https://github.com/your-username)
-- **포트폴리오**: [Live Demo](https://your-portfolio-url.vercel.app)
+- **GitHub**: [jang8163](https://github.com/jang8163)
+- **포트폴리오**: [Live Demo](https://portfolio-git-main-jangwonjuns-projects.vercel.app)
 
 ## 📄 라이선스
 

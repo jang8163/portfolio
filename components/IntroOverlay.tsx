@@ -9,7 +9,6 @@ type Props = {
 
 export default function IntroOverlay({ durationMs = 2400 }: Props) {
   const [open, setOpen] = useState(true);
-  const [isExiting, setIsExiting] = useState(false);
   const prevOverflow = useRef<{ body: string; html: string }>({ body: '', html: '' });
 
   useEffect(() => {
@@ -17,7 +16,6 @@ export default function IntroOverlay({ durationMs = 2400 }: Props) {
     document.body.classList.remove('intro-done');
 
     const close = () => {
-      setIsExiting(true);
       setTimeout(() => {
         setOpen(false);
         document.body.classList.remove('intro-active');

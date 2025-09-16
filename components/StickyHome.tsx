@@ -3,6 +3,7 @@
 
 import { useRef, useEffect, useState } from 'react';
 import { motion, useScroll, useTransform, useInView, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 import Hero from '@/components/Hero';
 import NavBar from '@/components/NavBar';
 
@@ -180,7 +181,7 @@ export default function StickyHome() {
                   { name: 'HTML5', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' }
                 ].map(({ name, src }) => (
                   <div key={name} className="flex flex-col items-center p-6 rounded-lg bg-gray-200 border border-gray-100 text-gray-800 hover:bg-gray-100 transition-colors">
-                    <img src={src} alt={`${name} logo`} className="w-16 h-16 object-contain mb-2" />
+                    <Image src={src} alt={`${name} logo`} width={64} height={64} className="w-16 h-16 object-contain mb-2" />
                     <span className="text-sm mt-1">{name}</span>
                   </div>
                 ))}
@@ -196,52 +197,36 @@ export default function StickyHome() {
                 {[1, 2, 3, 4, 5].map((i) => (
                   <div key={i} className="relative group p-6 rounded-xl bg-gray-400 border border-gray-300 hover:bg-gray-300 transition-colors">
                     {i === 1 ? (
-                      <img
+                      <Image
                         src="/lexilearn/1.jpg"
                         alt="LexiLearn 프로젝트 메인 화면"
+                        width={400}
+                        height={160}
                         className="h-40 w-full rounded-lg object-cover mb-4"
-                        onError={(e) => {
-                          // 이미지 로드 실패 시 기본 배경 표시
-                          e.currentTarget.style.display = 'none';
-                          const fallback = e.currentTarget.nextElementSibling as HTMLElement;
-                          if (fallback) fallback.style.display = 'block';
-                        }}
                       />
                     ) : i === 2 ? (
-                      <img
+                      <Image
                         src="/health/메인 페이지.jpg"
                         alt="Health 프로젝트 메인 화면"
+                        width={400}
+                        height={160}
                         className="h-40 w-full rounded-lg object-cover mb-4"
-                        onError={(e) => {
-                          // 이미지 로드 실패 시 기본 배경 표시
-                          e.currentTarget.style.display = 'none';
-                          const fallback = e.currentTarget.nextElementSibling as HTMLElement;
-                          if (fallback) fallback.style.display = 'block';
-                        }}
                       />
                     ) : i === 3 ? (
-                      <img
+                      <Image
                         src="/musinsa/베스트 결과.jpg"
                         alt="Musinsa Collector 프로젝트 메인 화면"
+                        width={400}
+                        height={160}
                         className="h-40 w-full rounded-lg object-cover mb-4"
-                        onError={(e) => {
-                          // 이미지 로드 실패 시 기본 배경 표시
-                          e.currentTarget.style.display = 'none';
-                          const fallback = e.currentTarget.nextElementSibling as HTMLElement;
-                          if (fallback) fallback.style.display = 'block';
-                        }}
                       />
                     ) : i === 5 ? (
-                      <img
+                      <Image
                         src="/dex/home.jpg"
                         alt="Web 포트폴리오 프로젝트 메인 화면"
+                        width={400}
+                        height={160}
                         className="h-40 w-full rounded-lg object-cover mb-4"
-                        onError={(e) => {
-                          // 이미지 로드 실패 시 기본 배경 표시
-                          e.currentTarget.style.display = 'none';
-                          const fallback = e.currentTarget.nextElementSibling as HTMLElement;
-                          if (fallback) fallback.style.display = 'block';
-                        }}
                       />
                     ) : (
                       <div className="h-40 rounded-lg bg-gray-300 mb-4" />
@@ -296,7 +281,7 @@ export default function StickyHome() {
 
                 <p>저는 새로운 아이디어를 창의적으로 발굴하고, 이를 기술적으로 연결해 구체화하는 과정을 즐깁니다. 또한 팀원들과 유연하게 소통하며 협업하여 아이디어를 실제 결과물로 발전시키는 데 기여할 수 있습니다. 아울러 맡은 일은 끝까지 <strong className="text-white">책임감</strong> 있게 완수하여 프로젝트가 안정적으로 추진될 수 있도록 힘을 보태겠습니다.</p>
 
-                <p>무엇보다 <strong className="text-white">"문제를 해결하여 행복을 이룬다"</strong>라는 귀사의 비전은 저의 가치관과 깊이 맞닿아 있습니다. 저 역시 기술을 통해 사람들을 돕고, 더 많은 이들이 행복을 느낄 수 있는 경험을 만들어 가고 싶습니다. 그렇기에 단순히 회사의 구성원이 되는 것을 넘어, 같은 목표를 향해 함께 나아가며 의미 있는 성과를 이루고 싶습니다.</p>
+                <p>무엇보다 <strong className="text-white">&ldquo;문제를 해결하여 행복을 이룬다&rdquo;</strong>라는 귀사의 비전은 저의 가치관과 깊이 맞닿아 있습니다. 저 역시 기술을 통해 사람들을 돕고, 더 많은 이들이 행복을 느낄 수 있는 경험을 만들어 가고 싶습니다. 그렇기에 단순히 회사의 구성원이 되는 것을 넘어, 같은 목표를 향해 함께 나아가며 의미 있는 성과를 이루고 싶습니다.</p>
               </div>
             </div>
           </section>
@@ -605,8 +590,8 @@ export default function StickyHome() {
                             <h4 className="font-semibold text-blue-900 mb-2">🎬 인트로 애니메이션</h4>
                             <ul className="text-sm text-blue-800 space-y-1">
                               <li>• 시네마틱한 인트로 오버레이</li>
-                              <li>• "프론트엔드 개발자 장원준입니다" 텍스트</li>
-                              <li>• "Front-End" 배경 텍스트 애니메이션</li>
+                              <li>• &ldquo;프론트엔드 개발자 장원준입니다&rdquo; 텍스트</li>
+                              <li>• &ldquo;Front-End&rdquo; 배경 텍스트 애니메이션</li>
                               <li>• 자연스러운 메인 콘텐츠 전환</li>
                             </ul>
                           </div>
@@ -905,7 +890,7 @@ export default function StickyHome() {
                             <ul className="text-sm text-gray-600 space-y-1">
                               <li>• <strong>전문적인 첫인상</strong> - 시네마틱한 인트로 오버레이</li>
                               <li>• <strong>자연스러운 전환</strong> - 메인 콘텐츠로 부드러운 이동</li>
-                              <li>• <strong>브랜딩 강화</strong> - "프론트엔드 개발자 장원준입니다" 메시지</li>
+                              <li>• <strong>브랜딩 강화</strong> - &ldquo;프론트엔드 개발자 장원준입니다&rdquo; 메시지</li>
                             </ul>
                           </div>
                           <div className="bg-gradient-to-r from-green-50 to-teal-50 p-4 rounded-lg">

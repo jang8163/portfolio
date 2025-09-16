@@ -1,26 +1,149 @@
 @import "tailwindcss";
 
+/* -------------------------------------------------
+ * Global styles & Tailwind v4 tokens
+ * ------------------------------------------------- */
+
+/* Light (default) */
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f172a;
+
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0f172a;
+
+  --muted: #f8fafc;
+  --muted-foreground: #64748b;
+
+  --border: #e2e8f0;
+
+  --accent: #f1f5f9;
+  --accent-foreground: #0f172a;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
+/* Dark (auto) */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0f172a;
+    --foreground: #f8fafc;
+
+    --primary: #3b82f6;
+    --primary-foreground: #ffffff;
+
+    --secondary: #1e293b;
+    --secondary-foreground: #f8fafc;
+
+    --muted: #1e293b;
+    --muted-foreground: #94a3b8;
+
+    --border: #334155;
+
+    --accent: #1e293b;
+    --accent-foreground: #f8fafc;
   }
 }
 
+/* Tailwind v4 theme tokens → utilities */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --spacing-section: 5rem;
+  --spacing-container: 1rem;
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+}
+
+/* -------------------------------------------------
+ * Base
+ * ------------------------------------------------- */
+html { scroll-behavior: smooth; }
+
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Skip link (a11y) */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--primary);
+  color: var(--primary-foreground);
+  padding: 8px;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  z-index: 1000;
+  transition: top 0.3s;
+}
+.skip-link:focus { top: 6px; }
+
+/* -------------------------------------------------
+ * Intro → Home attach animation
+ * - 인트로 동안(overlay 표시) 메인 Home의 타겟은 DOM에 존재하지만 숨김
+ * - 인트로 종료(body.intro-done) 시 자연스럽게 나타나며
+ *   framer-motion layoutId로 중앙→상단으로 이어지는 전환
+ * ------------------------------------------------- */
+
+/* Home 상단 타겟(항상 레이아웃 존재: opacity/transform만 제어) */
+.intro-carry {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity .55s ease, transform .55s ease;
+}
+.intro-carry .intro-line1 {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity .55s ease, transform .55s ease;
+}
+.intro-carry .intro-back {
+  opacity: 0;
+  transform: translateY(0) scale(.98);
+  transition: opacity .65s ease, transform .65s ease;
+}
+
+/* 인트로 진행 중: Home 타겟은 숨김(공유 전환 계산만) */
+body.intro-active .intro-carry { opacity: 0; }
+
+/* 인트로 종료: Home 타겟 노출(상단 배치) */
+body.intro-done .intro-carry { opacity: 1; transform: none; }
+body.intro-done .intro-carry .intro-line1 { opacity: 1; transform: none; }
+body.intro-done .intro-carry .intro-back  { opacity: 1; transform: none; }
+
+/* 사용자 선호: 모션 줄이기 */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .intro-carry,
+  .intro-carry .intro-line1,
+  .intro-carry .intro-back {
+    transition: none !important;
+  }
 }

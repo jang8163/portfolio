@@ -104,7 +104,7 @@ export default function StickyHome() {
                   <div className="space-y-4">
                     <h3 className="text-2xl font-bold text-white">Jang won jun</h3>
                     <p className="text-lg text-gray-50 leading-relaxed">
-                      사용자 중심의 Creative Technologist를 꿈꾸며, 
+                      경험을 설계하는 Creative Technologist를 꿈꾸며, 
                       <br className="hidden md:block" />
                       끊임없이 학습하고 성장하는 개발자입니다.
                     </p>

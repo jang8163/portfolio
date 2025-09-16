@@ -104,7 +104,7 @@ export default function StickyHome() {
                   <div className="space-y-4">
                     <h3 className="text-2xl font-bold text-white">Jang won jun</h3>
                     <p className="text-lg text-gray-50 leading-relaxed">
-                      사용자 중심의 프론트엔드 개발자를 꿈꾸며, 
+                      사용자 중심의 Creative Technologist를 꿈꾸며, 
                       <br className="hidden md:block" />
                       끊임없이 학습하고 성장하는 개발자입니다.
                     </p>
@@ -514,7 +514,7 @@ export default function StickyHome() {
                         : selectedProject === 3
                         ? '공개 API를 활용한 안전하고 합법적인 데이터 수집 방법을 학습하기 위한 교육용 프로젝트입니다. 실제 API 호출을 통해 패션 상품 데이터를 수집하고, 데이터 분석 및 시각화까지 제공하는 종합적인 데이터 사이언스 학습 플랫폼입니다. 특히 웹 스크래핑의 윤리적 측면을 강조하며, 공개 API만을 사용하여 완전히 합법적인 데이터 수집 방법을 제시합니다.'
                         : selectedProject === 5
-                        ? '프론트엔드 개발자로서의 역량과 프로젝트를 보여주는 인터랙티브한 포트폴리오 웹사이트입니다. Next.js 15와 React 19를 활용하여 최신 기술 스택으로 구현되었으며, Framer Motion을 통한 고급 애니메이션과 스크롤 기반 스토리텔링으로 사용자에게 몰입감 있는 경험을 제공합니다. 반응형 디자인과 모던한 UI/UX로 모든 디바이스에서 최적화된 경험을 제공합니다.'
+                        ? 'Creative Technologist로서의 역량과 프로젝트를 보여주는 인터랙티브한 포트폴리오 웹사이트입니다. Next.js 15와 React 19를 활용하여 최신 기술 스택으로 구현되었으며, Framer Motion을 통한 고급 애니메이션과 스크롤 기반 스토리텔링으로 사용자에게 몰입감 있는 경험을 제공합니다. 반응형 디자인과 모던한 UI/UX로 모든 디바이스에서 최적화된 경험을 제공합니다.'
                         : '프로젝트 설명이 들어갑니다.'
                       }
                     </p>
@@ -640,7 +640,7 @@ export default function StickyHome() {
                             <h4 className="font-semibold text-blue-900 mb-2">🎬 인트로 애니메이션</h4>
                             <ul className="text-sm text-blue-800 space-y-1">
                               <li>• 시네마틱한 인트로 오버레이</li>
-                              <li>• &ldquo;프론트엔드 개발자 장원준입니다&rdquo; 텍스트</li>
+                              <li>• &ldquo;아이디어를 스케치에서 코드로 옮겨 담는 사람, 장원준입니다&rdquo; 텍스트</li>
                               <li>• &ldquo;Front-End&rdquo; 배경 텍스트 애니메이션</li>
                               <li>• 자연스러운 메인 콘텐츠 전환</li>
                             </ul>
@@ -940,7 +940,7 @@ export default function StickyHome() {
                             <ul className="text-sm text-gray-600 space-y-1">
                               <li>• <strong>전문적인 첫인상</strong> - 시네마틱한 인트로 오버레이</li>
                               <li>• <strong>자연스러운 전환</strong> - 메인 콘텐츠로 부드러운 이동</li>
-                              <li>• <strong>브랜딩 강화</strong> - &ldquo;프론트엔드 개발자 장원준입니다&rdquo; 메시지</li>
+                              <li>• <strong>브랜딩 강화</strong> - &ldquo;아이디어를 스케치에서 코드로 옮겨 담는 사람, 장원준입니다&rdquo; 메시지</li>
                             </ul>
                           </div>
                           <div className="bg-gradient-to-r from-green-50 to-teal-50 p-4 rounded-lg">

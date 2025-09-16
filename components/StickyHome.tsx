@@ -246,9 +246,7 @@ export default function StickyHome() {
                     {i === 1 && (
                       <div className="absolute inset-0 bg-black/50 rounded-xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div className="flex flex-col gap-3">
-                          <motion.button
-                            initial={{ opacity: 0, y: 10 }}
-                            whileHover={{ opacity: 1, y: 0 }}
+                          <button
                             className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
                             onClick={() => {
                               setSelectedProject(i);
@@ -256,17 +254,15 @@ export default function StickyHome() {
                             }}
                           >
                             자세히 보기
-                          </motion.button>
-                          <motion.button
-                            initial={{ opacity: 0, y: 10 }}
-                            whileHover={{ opacity: 1, y: 0 }}
+                          </button>
+                          <button
                             className="bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors"
                             onClick={() => {
                               window.open('https://github.com/jang8163/lexilearn', '_blank');
                             }}
                           >
                             GitHub 바로가기
-                          </motion.button>
+                          </button>
                         </div>
                       </div>
                     )}

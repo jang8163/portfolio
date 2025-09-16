@@ -7,6 +7,17 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
+## 🔗 바로가기 사이트
+
+| 사이트 | 링크 | 설명 |
+|--------|------|------|
+| 🌐 **라이브 포트폴리오** | [portfolio-git-main-jangwonjuns-projects.vercel.app](https://portfolio-git-main-jangwonjuns-projects.vercel.app) | 실제 배포된 포트폴리오 사이트 |
+| 📧 **이메일** | [helios8163@gmail.com](mailto:helios8163@gmail.com) | 연락처 및 문의 |
+| 💻 **GitHub** | [github.com/jang8163](https://github.com/jang8163) | 소스코드 및 프로젝트 |
+| 📱 **GitHub 저장소** | [github.com/jang8163/portfolio](https://github.com/jang8163/portfolio) | 이 포트폴리오 프로젝트 |
+
+---
+
 ## 📋 프로젝트 소개
 
 이 프로젝트는 프론트엔드 개발자 장원준의 개인 포트폴리오 웹사이트입니다. 

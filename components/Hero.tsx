@@ -28,7 +28,7 @@ export default function Hero(): React.JSX.Element {
         style={{
           backgroundImage: 'url(/photo.png)',
           backgroundPosition: 'center 90%',
-          backgroundSize: '40%'
+          backgroundSize: '25%'
         }}
       />
       

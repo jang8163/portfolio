@@ -180,7 +180,8 @@ export default function StickyHome() {
                   { name: 'Python', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
                   { name: 'React', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
                   { name: 'PostCSS', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postcss/postcss-original.svg' },
-                  { name: 'HTML5', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' }
+                  { name: 'HTML5', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+                  { name: 'Photoshop', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg' }
                 ].map(({ name, src }) => (
                   <div key={name} className="flex flex-col items-center p-6 rounded-lg bg-gray-200 border border-gray-100 text-gray-800 hover:bg-gray-100 transition-colors">
                     <Image src={src} alt={`${name} logo`} width={64} height={64} className="w-16 h-16 object-contain mb-2" />

@@ -101,13 +101,15 @@ export default function StickyHome() {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="flex-1 text-center md:text-left"
                 >
-                  <div className="space-y-4">
-                    <h3 className="text-2xl font-bold text-white">Jang won jun</h3>
-                    <p className="text-lg text-gray-50 leading-relaxed">
-                      경험을 설계하는 Creative Technologist를 꿈꾸며, 
-                      <br className="hidden md:block" />
-                      끊임없이 학습하고 성장하는 개발자입니다.
-                    </p>
+                  <div className="space-y-6">
+                    <h3 className="text-3xl font-bold text-white">Jang won jun</h3>
+                    <div className="space-y-4">
+                      <p className="text-lg text-gray-50 leading-relaxed">
+                        경험을 설계하는 Creative Technologist를 꿈꾸며, 
+                        <br className="hidden md:block" />
+                        끊임없이 학습하고 성장하는 개발자입니다.
+                      </p>
+                    </div>
                     <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                       <span className="px-3 py-1 bg-gray-300/30 text-gray-50 text-sm rounded-full border border-gray-200/30">
                         #성실함

@@ -7,8 +7,8 @@ import { GeistMono } from "geist/font/mono";
 import StartAtHome from "@/components/StartAtHome"; // 항상 Home에서 시작
 
 export const metadata: Metadata = {
-  title: "Omnicorn | Jang Wonjun",
-  description: "Backend-in-progress → Future Full-Stack PM",
+  title: "Portfolio | 장원준",
+  description: "프론트엔드 개발자 장원준의 개인 포트폴리오 웹사이트",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -16,15 +16,16 @@ const ChevronDownIcon: React.FC<IconProps> = (p) => (
 export default function Hero(): React.JSX.Element {
   // 줄별로 분리
   const lines = [
-    "“상상력을 현실로 구현하며, 협업 속에서 소통과 집요한 문제 해결력을 발휘해",
-    "책임감 있게 성장하는 개발자입니다.”"
+    "\"상상력을 현실로 구현하며, 협업 속에서\"",
+    "\"소통과 집요한 문제해결력을 발휘해\"",
+    "\"책임감 있게 성장하는 개발자입니다.\""
   ];
 
   return (
     <section aria-label="Hero" className="relative h-screen flex flex-col bg-white">
-      {/* 배경 이미지 */}
+      {/* 이미지 */}
       <div 
-        className="absolute inset-0 bg-center bg-no-repeat"
+        className="absolute inset-0 bg-center bg-no-repeat z-30"
         style={{
           backgroundImage: 'url(/사진-removebg-preview.png)',
           backgroundPosition: 'center 90%',
@@ -34,7 +35,7 @@ export default function Hero(): React.JSX.Element {
       
       {/* 메인 콘텐츠 영역 - 상단바 바로 아래에 배치 */}
       <motion.div
-        className="relative z-10 flex-1 flex flex-col items-center px-4 pb-20"
+        className="relative z-20 flex-1 flex flex-col items-center px-4 pb-20"
         style={{ paddingTop: '80px' }}
         initial="hidden"
         animate="visible"
@@ -51,13 +52,13 @@ export default function Hero(): React.JSX.Element {
             className="flex justify-center items-start"
             aria-hidden="true"
             style={{ 
-              fontSize: 'clamp(25px, 6vw, 75px)',
+              fontSize: 'clamp(35px, 8vw, 105px)',
               whiteSpace: 'nowrap',
               letterSpacing: '-0.02em'
             }}
             initial={{ opacity: 0.15, y: -40, scale: 2.5 }}
             animate={{ 
-              opacity: 0.08, 
+              opacity: 0.5, 
               y: 0, 
               scale: 1,
               transition: { 
@@ -67,7 +68,7 @@ export default function Hero(): React.JSX.Element {
               }
             }}
           >
-            <div className="font-extrabold leading-none text-black">
+            <div className="font-extrabold leading-none text-blue-600">
               Creative Technologist
             </div>
           </motion.div>
@@ -75,9 +76,9 @@ export default function Hero(): React.JSX.Element {
           {/* 전경 텍스트 - 인트로에서 자연스럽게 모핑 */}
           <motion.h1
             layoutId="main-text"
-            className="font-black tracking-tight text-black"
+            className="font-black tracking-tight text-black relative z-0"
             style={{ 
-              fontSize: 'clamp(0.94rem, 1.87vw, 1.87rem)',
+              fontSize: 'clamp(1.32rem, 2.62vw, 2.62rem)',
               lineHeight: 1.2
             }}
             initial={{ 
@@ -100,12 +101,12 @@ export default function Hero(): React.JSX.Element {
 
         {/* 줄별로 위에서 아래로 등장하는 텍스트 */}
         <motion.div
-          className="absolute bottom-20 left-1/2 transform -translate-x-1/2"
+          className="absolute bottom-20 right-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 3.0, duration: 0.5 }} // 3초 후에 시작
         >
-          <div className="flex flex-col justify-center items-center text-lg md:text-xl font-medium text-white tracking-wider">
+          <div className="flex flex-col justify-center items-end text-lg md:text-xl font-medium tracking-wider" style={{ color: '#101010' }}>
             {lines.map((line, lineIndex) => (
               <motion.div
                 key={lineIndex}
@@ -152,15 +153,19 @@ export default function Hero(): React.JSX.Element {
 
       {/* 개선된 스크롤 표시 - 화면 하단에 고정 */}
       <motion.div
-        className="relative z-10 absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
+        className="relative z-40 absolute bottom-0 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 8.0, duration: 0.8 }} // 모든 애니메이션 완료 후 등장
       >
         {/* 스크롤 텍스트 */}
         <motion.p 
-          className="text-sm text-white/80 mb-3 font-medium tracking-wide"
-          animate={{ opacity: [0.6, 1, 0.6] }}
+          className="text-sm mb-3 font-medium tracking-wide px-3 py-1 rounded-full bg-blue-600"
+          style={{ 
+            color: 'white',
+            opacity: 0.5
+          }}
+          animate={{ opacity: [0.3, 0.5, 0.3] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         >
           SCROLL DOWN
@@ -168,14 +173,20 @@ export default function Hero(): React.JSX.Element {
         
         {/* 스크롤 인디케이터 */}
         <motion.div 
-          className="relative w-6 h-10 border-2 border-white/60 rounded-full flex justify-center"
+          className="relative w-6 h-10 border-2 rounded-full flex justify-center"
+          style={{ 
+            borderColor: '#1A3A6B',
+            backgroundColor: 'white',
+            padding: '2px'
+          }}
           animate={{ 
-            borderColor: ["rgba(255, 255, 255, 0.6)", "rgba(255, 255, 255, 0.9)", "rgba(255, 255, 255, 0.6)"]
+            borderColor: ["rgba(26, 58, 107, 0.6)", "rgba(26, 58, 107, 0.9)", "rgba(26, 58, 107, 0.6)"]
           }}
           transition={{ duration: 2, repeat: Infinity }}
         >
           <motion.div 
-            className="w-1 h-2 bg-white/80 rounded-full mt-2"
+            className="w-1 h-2 rounded-full mt-2"
+            style={{ backgroundColor: '#1A3A6B' }}
             animate={{ y: [0, 16, 0], opacity: [1, 0, 1] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           />
@@ -187,19 +198,19 @@ export default function Hero(): React.JSX.Element {
             animate={{ y: [0, 8, 0], opacity: [0.6, 1, 0.6] }}
             transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
           >
-            <ChevronDownIcon className="w-6 h-6 text-white/80" />
+            <ChevronDownIcon className="w-6 h-6" style={{ color: '#1A3A6B' }} />
           </motion.div>
           <motion.div
             animate={{ y: [0, 8, 0], opacity: [0.4, 0.9, 0.4] }}
             transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
           >
-            <ChevronDownIcon className="w-5 h-5 text-white/60" />
+            <ChevronDownIcon className="w-5 h-5" style={{ color: '#1A3A6B' }} />
           </motion.div>
           <motion.div
             animate={{ y: [0, 8, 0], opacity: [0.2, 0.7, 0.2] }}
             transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut", delay: 0.4 }}
           >
-            <ChevronDownIcon className="w-4 h-4 text-white/40" />
+            <ChevronDownIcon className="w-4 h-4" style={{ color: '#1A3A6B' }} />
           </motion.div>
         </div>
       </motion.div>

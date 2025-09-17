@@ -65,10 +65,10 @@ export default function StickyHome() {
         {/* ABOUT + 모든 후속 섹션들이 하나의 연속된 레이어 */}
         <motion.div
           style={{ y: aboutY }}
-          className="absolute inset-0 z-20 bg-gray-400 border-t border-gray-300 shadow-[0_-8px_24px_rgba(0,0,0,0.08)]"
+          className="absolute inset-0 z-20 bg-[#7CA7F7] border-t border-[#6B96E6] shadow-[0_-8px_24px_rgba(0,0,0,0.08)]"
         >
           {/* About Me 섹션 - 컴팩트한 높이, 상단바 공간 확보 */}
-          <section id="about" className={`scroll-mt-24 bg-gray-400 py-12 ${showNavBar ? 'pt-24' : 'pt-12'}`}>
+          <section id="about" className={`scroll-mt-24 bg-[#7CA7F7] py-12 ${showNavBar ? 'pt-24' : 'pt-12'}`}>
             <div className="mx-auto max-w-4xl px-4">
               {/* About Me 제목 - 왼쪽 정렬 */}
               <h2 className="text-3xl md:text-4xl font-bold text-left mb-8 text-white">About Me</h2>
@@ -83,7 +83,7 @@ export default function StickyHome() {
                   className="flex-shrink-0"
                 >
                   <div className="relative">
-                    <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden bg-gray-300/20 border-4 border-gray-200/30 shadow-2xl">
+                    <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden bg-white/20 border-4 border-white/30 shadow-2xl">
                       <div className="w-full h-full bg-gray-300/30 items-center justify-center flex">
                         <div className="text-6xl text-gray-100">��‍��</div>
                       </div>
@@ -168,7 +168,7 @@ export default function StickyHome() {
           </section>
 
           {/* Skills 섹션 */}
-          <section id="skills" className="scroll-mt-24 py-20 bg-gray-300 min-h-screen">
+          <section id="skills" className="scroll-mt-24 py-20 bg-[#8BB3F8] min-h-screen">
             <div className="mx-auto max-w-4xl px-4">
               <h2 className="text-3xl md:text-4xl font-bold text-left mb-12 text-white">Skills <span className="text-sm font-normal text-gray-100 align-middle ml-1">(beginner)</span></h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -182,7 +182,7 @@ export default function StickyHome() {
                   { name: 'PostCSS', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postcss/postcss-original.svg' },
                   { name: 'HTML5', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' }
                 ].map(({ name, src }) => (
-                  <div key={name} className="flex flex-col items-center p-6 rounded-lg bg-gray-200 border border-gray-100 text-gray-800 hover:bg-gray-100 transition-colors">
+                  <div key={name} className="flex flex-col items-center p-6 rounded-lg bg-white/20 border border-white/30 text-white hover:bg-white/30 transition-colors">
                     <Image src={src} alt={`${name} logo`} width={64} height={64} className="w-16 h-16 object-contain mb-2" />
                     <span className="text-sm mt-1">{name}</span>
                   </div>
@@ -192,12 +192,12 @@ export default function StickyHome() {
           </section>
 
           {/* Projects 섹션 */}
-          <section id="projects" className="scroll-mt-24 py-20 bg-gray-500 min-h-screen">
+          <section id="projects" className="scroll-mt-24 py-20 bg-[#7CA7F7] min-h-screen">
             <div className="mx-auto max-w-4xl px-4">
               <h2 className="text-3xl md:text-4xl font-bold text-left mb-12 text-white">Projects</h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {[1, 2, 3, 4, 5].map((i) => (
-                  <div key={i} className="relative group p-6 rounded-xl bg-gray-400 border border-gray-300 hover:bg-gray-300 transition-colors">
+                  <div key={i} className="relative group p-6 rounded-xl bg-white/20 border border-white/30 hover:bg-white/30 transition-colors">
                     {i === 1 ? (
                       <Image
                         src="/lexilearn/1.jpg"
@@ -325,7 +325,7 @@ export default function StickyHome() {
           </section>
 
           {/* Experience & Education 섹션 */}
-          <section id="experience" className="scroll-mt-24 py-20 bg-gray-600 min-h-screen">
+          <section id="experience" className="scroll-mt-24 py-20 bg-[#6B96E6] min-h-screen">
             <div className="mx-auto max-w-4xl px-4">
               <h2 className="text-3xl md:text-4xl font-bold text-left mb-12 text-white">Experience?</h2>
               <div className="space-y-6 text-gray-50 text-base leading-relaxed">

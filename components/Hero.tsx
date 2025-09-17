@@ -26,7 +26,7 @@ export default function Hero(): React.JSX.Element {
       <div 
         className="absolute inset-0 bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(/photo.png)',
+          backgroundImage: 'url(/사진-removebg-preview.png)',
           backgroundPosition: 'center 90%',
           backgroundSize: '30%'
         }}

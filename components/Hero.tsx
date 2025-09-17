@@ -28,7 +28,7 @@ export default function Hero(): React.JSX.Element {
         style={{
           backgroundImage: 'url(/사진-removebg-preview.png)',
           backgroundPosition: 'center 90%',
-          backgroundSize: '20%'
+          backgroundSize: '15%'
         }}
       />
       

@@ -21,7 +21,7 @@ export default function Hero(): React.JSX.Element {
   ];
 
   return (
-    <section aria-label="Hero" className="relative h-screen flex flex-col">
+    <section aria-label="Hero" className="relative h-screen flex flex-col bg-white">
       {/* 배경 이미지 */}
       <div 
         className="absolute inset-0 bg-center bg-no-repeat"
@@ -31,9 +31,6 @@ export default function Hero(): React.JSX.Element {
           backgroundSize: '30%'
         }}
       />
-      
-      {/* 배경 오버레이 */}
-      <div className="absolute inset-0 bg-black/20" />
       
       {/* 메인 콘텐츠 영역 - 상단바 바로 아래에 배치 */}
       <motion.div

@@ -58,7 +58,7 @@ export default function Hero(): React.JSX.Element {
           }
         }}
       >
-        WONJUN'S<br />PORTFOLIO
+        WONJUN&apos;S<br />PORTFOLIO
       </motion.div>
 
       {/* 프로젝트 정보 텍스트 */}
@@ -165,7 +165,7 @@ export default function Hero(): React.JSX.Element {
               }
             }}
           >
-            "아이디어를 스케치에서 코드로 옮겨 담는 사람, 장원준입니다."
+            &ldquo;아이디어를 스케치에서 코드로 옮겨 담는 사람, 장원준입니다.&rdquo;
           </motion.h1>
         </div>
 

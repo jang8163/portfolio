@@ -99,14 +99,15 @@ export default function IntroOverlay({ durationMs = 2400 }: Props) {
             aria-hidden
           >
             <div
-              className="font-extrabold leading-none text-foreground/12 dark:text-white/20"
+              className="font-extrabold leading-none"
               style={{
                 fontSize: 'clamp(45px, 11vw, 130px)',
                 whiteSpace: 'nowrap',
                 overflow: 'visible',
                 wordBreak: 'keep-all',
                 maxWidth: '100vw',
-                padding: '0 20px'
+                padding: '0 20px',
+                color: '#93C5FD'
               }}
             >
               Creative Technologist

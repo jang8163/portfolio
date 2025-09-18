@@ -68,7 +68,7 @@ export default function StickyHome() {
           className="absolute inset-0 z-20 bg-[#7CA7F7] border-t border-[#6B96E6] shadow-[0_-8px_24px_rgba(0,0,0,0.08)]"
         >
           {/* About Me 섹션 - 컴팩트한 높이, 상단바 공간 확보 */}
-          <section id="about" className={`scroll-mt-24 bg-[#7CA7F7] py-12 ${showNavBar ? 'pt-24' : 'pt-12'}`}>
+          <section id="about" className={`scroll-mt-24 py-12 ${showNavBar ? 'pt-24' : 'pt-12'}`} style={{ backgroundColor: '#1A4BC7' }}>
             <div className="mx-auto max-w-4xl px-4">
               {/* About Me 제목 - 왼쪽 정렬 */}
               <h2 className="text-3xl md:text-4xl font-bold text-left mb-8 text-white">About Me</h2>
@@ -99,7 +99,7 @@ export default function StickyHome() {
                   initial={{ opacity: 0, x: 30 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
-                  className="flex-1 text-center md:text-left"
+                  className="flex-1 text-center md:text-left mt-8"
                 >
                   <div className="space-y-6">
                     <h3 className="text-3xl font-bold text-white">Jang won jun</h3>
@@ -134,32 +134,26 @@ export default function StickyHome() {
 
                 <div className="space-y-4">
                   {/* Q1 */}
-                  <div className="bg-gray-500/50 rounded-lg p-4 border border-gray-300/30">
-                    <h4 className="text-lg font-bold text-white mb-2">Q. 왜 Creative Technologist가 되고 싶은가?</h4>
+                  <div className="bg-gray-500/50 rounded-lg p-8 border border-gray-300/30">
+                    <h4 className="text-2xl font-bold text-white mb-18">Q. 왜 Creative Technologist가 되고 싶은가?</h4>
                     <div className="space-y-2 text-gray-50 text-sm">
-                      <p>저는 단순히 기능적인 개발자에 머무르는 것이 아니라, 사람들에게 새로운 경험과 가치를 줄 수 있는 메이커가 되고 싶습니다.</p>
-                      <p>개발과 디자인을 모두 아우르며 아이디어를 직접 구현하는 과정에서 큰 보람을 느껴왔고, 그 과정이 저를 Creative Technologist라는 목표로 이끌었습니다.</p>
-                      <p>궁극적으로는 창의성과 기술을 잇는 다리 역할을 하며, 문제 해결을 통해 더 많은 사람들에게 행복을 전하는 것이 제가 이 길을 선택한 이유입니다.</p>
+                      <p>저는 단순히 기능적인 개발자에 머무르는 것이 아니라, 사람들에게 새로운 경험과 가치를 줄 수 있는 메이커가 되고 싶습니다.<br />개발과 디자인을 모두 아우르며 아이디어를 직접 구현하는 과정에서 큰 보람을 느껴왔고, 그 과정이 저를 Creative Technologist라는 목표로 이끌었습니다. 궁극적으로는 창의성과 기술을 잇는 다리 역할을 하며, 문제 해결을 통해 더 많은 사람들에게 행복을 전하는 것이 제가 이 길을 선택한 이유입니다.</p>
                     </div>
                   </div>
 
                   {/* Q2 */}
-                  <div className="bg-gray-500/50 rounded-lg p-4 border border-gray-300/30">
-                    <h4 className="text-lg font-bold text-white mb-2">Q. AI Agent 분야 중 Voice Agent에 관심이 있는가?</h4>
+                  <div className="bg-gray-500/50 rounded-lg p-8 border border-gray-300/30">
+                    <h4 className="text-2xl font-bold text-white mb-18">Q. AI Agent 분야 중 Voice Agent에 관심이 있는가?</h4>
                     <div className="space-y-2 text-gray-50 text-sm">
-                      <p>저는 사람들의 문제를 해결하고 삶의 질을 높이는 기술에 관심이 많습니다. 특히 AI Agent는 단순한 도구가 아니라 사용자와 함께 생각하고 행동하는 파트너로서, 사람들의 일상과 업무 방식을 근본적으로 바꿀 수 있다고 생각합니다.</p>
-                      <p>그 중에서도 우울증이나 정서적 어려움을 겪는 사람들을 돕고 싶어서 Voice Agent 분야에 관심을 갖게 되었습니다. 이런 분들은 집 밖으로 나가 치료받기가 쉽지 않고, 외로움도 크게 느끼기 때문에 도움이 절실합니다.</p>
-                      <p>Voice Agent는 방 안에서도 자연스럽게 다가가 대화를 나누고, 치료적 역할을 하며, 언제나 곁을 지켜줄 수 있는 따뜻한 기술이라고 생각합니다.</p>
+                      <p>저는 사람들의 문제를 해결하고 삶의 질을 높이는 기술에 관심이 많습니다. 특히 AI Agent는 단순한 도구가 아니라 사용자와 함께 생각하고 행동하는 파트너로서, 사람들의 일상과 업무 방식을 근본적으로 바꿀 수 있다고 생각합니다.<br />그 중에서도 우울증이나 정서적 어려움을 겪는 사람들을 돕고 싶어서 Voice Agent 분야에 관심을 갖게 되었습니다. 이런 분들은 집 밖으로 나가 치료받기가 쉽지 않고, 외로움도 크게 느끼기 때문에 도움이 절실합니다.<br />Voice Agent는 방 안에서도 자연스럽게 다가가 대화를 나누고, 치료적 역할을 하며, 언제나 곁을 지켜줄 수 있는 따뜻한 기술이라고 생각합니다.</p>
                     </div>
                   </div>
 
                   {/* Q3 */}
-                  <div className="bg-gray-500/50 rounded-lg p-4 border border-gray-300/30">
-                    <h4 className="text-lg font-bold text-white mb-2">Q. 앞으로의 목표?</h4>
+                  <div className="bg-gray-500/50 rounded-lg p-8 border border-gray-300/30">
+                    <h4 className="text-2xl font-bold text-white mb-18">Q. 앞으로의 목표?</h4>
                     <div className="space-y-2 text-gray-50 text-sm">
-                      <p>저는 아직 배움의 초입에 있어 부족한 점이 많지만, 작은 문제라도 끝까지 집요하게 파고들며 해결하는 성격을 가지고 있습니다.</p>
-                      <p>이 과정 속에서 개발과 디자인의 기초를 다져가고 있으며, 점차 아이디어를 직접 구현할 수 있는 역량을 쌓아가고자 합니다.</p>
-                      <p>궁극적으로는 창의성과 기술을 연결하는 Creative Technologist로 성장하여, 사람들에게 의미 있고 가치 있는 경험을 만들어내는 것이 제 목표입니다.</p>
+                      <p>저는 아직 배움의 초입에 있어 부족한 점이 많지만, 작은 문제라도 끝까지 집요하게 파고들며 해결하는 성격을 가지고 있습니다.<br />이 과정 속에서 개발과 디자인의 기초를 다져가고 있으며, 점차 아이디어를 직접 구현할 수 있는 역량을 쌓아가고자 합니다.<br />궁극적으로는 창의성과 기술을 연결하는 Creative Technologist로 성장하여, 사람들에게 의미 있고 가치 있는 경험을 만들어내는 것이 제 목표입니다.</p>
                     </div>
                   </div>
                 </div>
@@ -168,7 +162,7 @@ export default function StickyHome() {
           </section>
 
           {/* Skills 섹션 */}
-          <section id="skills" className="scroll-mt-24 py-20 bg-[#8BB3F8] min-h-screen">
+          <section id="skills" className="scroll-mt-24 py-20 min-h-screen" style={{ backgroundColor: '#2B5DD8' }}>
             <div className="mx-auto max-w-4xl px-4">
               <h2 className="text-3xl md:text-4xl font-bold text-left mb-12 text-white">Skills <span className="text-sm font-normal text-gray-100 align-middle ml-1">(beginner)</span></h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -192,7 +186,7 @@ export default function StickyHome() {
           </section>
 
           {/* Projects 섹션 */}
-          <section id="projects" className="scroll-mt-24 py-20 bg-[#7CA7F7] min-h-screen">
+          <section id="projects" className="scroll-mt-24 py-20 min-h-screen" style={{ backgroundColor: '#1A4BC7' }}>
             <div className="mx-auto max-w-4xl px-4">
               <h2 className="text-3xl md:text-4xl font-bold text-left mb-12 text-white">Projects</h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -222,6 +216,14 @@ export default function StickyHome() {
                         height={160}
                         className="h-40 w-full rounded-lg object-cover mb-4"
                       />
+                    ) : i === 4 ? (
+                      <Image
+                        src="/프로젝트4.jpg"
+                        alt="Main Portfolio 프로젝트 메인 화면"
+                        width={400}
+                        height={160}
+                        className="h-40 w-full rounded-lg object-cover mb-4"
+                      />
                     ) : i === 5 ? (
                       <Image
                         src="/dex/home.jpg"
@@ -238,10 +240,10 @@ export default function StickyHome() {
                       style={{ display: 'none' }}
                     />
                     <h3 className="text-xl font-semibold mb-3 text-white">
-                      {i === 1 ? '🎯 LexiLearn' : i === 2 ? '🎤 HealthVoice' : i === 3 ? '🛍️ Musinsa Collector' : i === 5 ? '💼 Web Portfolio' : `프로젝트 ${i}`}
+                      {i === 1 ? '🎯 LexiLearn' : i === 2 ? '🎤 HealthVoice' : i === 3 ? '🛍️ Musinsa Collector' : i === 4 ? '🎨 Main Portfolio' : i === 5 ? '💼 Web Portfolio' : `프로젝트 ${i}`}
                     </h3>
                     <p className="text-gray-50 mb-4">
-                      {i === 1 ? 'AI 기반 영어 발음 연습 플랫폼' : i === 2 ? '음성 기반 건강 & 웰빙 도우미' : i === 3 ? '공개 API 기반 패션 상품 데이터 수집 & 분석 도구' : i === 5 ? '인터랙티브 포트폴리오 웹사이트' : '프로젝트 설명 요약…'}
+                      {i === 1 ? 'AI 기반 영어 발음 연습 플랫폼' : i === 2 ? '음성 기반 건강 & 웰빙 도우미' : i === 3 ? '공개 API 기반 패션 상품 데이터 수집 & 분석 도구' : i === 4 ? 'Framer를 이용한 메인 포트폴리오' : i === 5 ? '인터랙티브 포트폴리오 웹사이트' : '프로젝트 설명 요약…'}
                     </p>
                     
                     {/* LexiLearn 프로젝트(i === 1)에 자세히 보기 및 GitHub 버튼 */}
@@ -294,25 +296,74 @@ export default function StickyHome() {
                       </div>
                     )}
                     
-                    {/* 다른 프로젝트들(3, 5)에 자세히 보기 버튼 */}
-                    {(i === 3 || i === 5) && (
-                      <motion.button
-                        initial={{ opacity: 0, y: 10 }}
-                        whileHover={{ opacity: 1, y: 0 }}
-                        className="absolute inset-0 bg-black/50 rounded-xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                        onClick={() => {
-                          setSelectedProject(i);
-                          setIsProjectModalOpen(true);
-                        }}
-                      >
-                        <span className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                          자세히 보기
-                        </span>
-                      </motion.button>
+                    {/* Musinsa Collector 프로젝트(i === 3)에 자세히 보기 및 GitHub 버튼 */}
+                    {i === 3 && (
+                      <div className="absolute inset-0 bg-black/50 rounded-xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div className="flex flex-col gap-3">
+                          <button
+                            className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                            onClick={() => {
+                              setSelectedProject(i);
+                              setIsProjectModalOpen(true);
+                            }}
+                          >
+                            자세히 보기
+                          </button>
+                          <button
+                            className="bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors"
+                            onClick={() => {
+                              window.open('https://github.com/jang8163/musinsa-collector', '_blank');
+                            }}
+                          >
+                            GitHub 바로가기
+                          </button>
+                        </div>
+                      </div>
+                    )}
+                    
+                    {/* Web Portfolio 프로젝트(i === 5)에 자세히 보기 및 GitHub 버튼 */}
+                    {i === 5 && (
+                      <div className="absolute inset-0 bg-black/50 rounded-xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div className="flex flex-col gap-3">
+                          <button
+                            className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                            onClick={() => {
+                              setSelectedProject(i);
+                              setIsProjectModalOpen(true);
+                            }}
+                          >
+                            자세히 보기
+                          </button>
+                          <button
+                            className="bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors"
+                            onClick={() => {
+                              window.open('https://github.com/jang8163/portfolio', '_blank');
+                            }}
+                          >
+                            GitHub 바로가기
+                          </button>
+                        </div>
+                      </div>
+                    )}
+                    
+                    {/* Main Portfolio 프로젝트(i === 4)에 포트폴리오 보러가기 버튼 */}
+                    {i === 4 && (
+                      <div className="absolute inset-0 bg-black/50 rounded-xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div className="flex flex-col gap-3">
+                          <button
+                            className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                            onClick={() => {
+                              window.open('https://modern-yard-197363.framer.app/', '_blank');
+                            }}
+                          >
+                            포트폴리오 보러가기
+                          </button>
+                        </div>
+                      </div>
                     )}
                     
                     {/* 다른 프로젝트들은 태그 제거 */}
-                    {i !== 1 && i !== 2 && i !== 3 && i !== 5 && (
+                    {i !== 1 && i !== 2 && i !== 3 && i !== 4 && i !== 5 && (
                       <div className="flex gap-2">
                         <span className="px-3 py-1 bg-gray-300 text-gray-800 text-sm rounded">React</span>
                         <span className="px-3 py-1 bg-gray-300 text-gray-800 text-sm rounded">Next.js</span>
@@ -325,10 +376,18 @@ export default function StickyHome() {
           </section>
 
           {/* Experience & Education 섹션 */}
-          <section id="experience" className="scroll-mt-24 py-20 bg-[#6B96E6] min-h-screen">
+          <section id="experience" className="scroll-mt-24 py-20 min-h-screen relative" style={{ backgroundColor: 'rgba(43, 93, 216, 0.85)' }}>
+            {/* 배경 이미지 */}
+            <div 
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+              style={{
+                backgroundImage: 'url(/uni.jpg)',
+                zIndex: -1
+              }}
+            />
             <div className="mx-auto max-w-4xl px-4">
-              <h2 className="text-3xl md:text-4xl font-bold text-left mb-12 text-white">Experience?</h2>
-              <div className="space-y-6 text-gray-50 text-base leading-relaxed">
+              <h2 className="text-3xl md:text-4xl font-bold text-left mb-28 text-white">Experience?</h2>
+              <div className="space-y-4 text-gray-50 text-base leading-normal">
                 <p>저는 아직 직접적인 프로젝트 경험은 많지 않고 모르는 부분도 많아 내세울 점은 부족합니다. 하지만 <strong className="text-white">꾸준한 학습과 성실한 태도</strong>를 통해 성장해 온 과정에 강한 자신감을 가지고 있으며, 새로운 환경에 적응하고 지식을 습득하는 데 빠른 편입니다. 문제를 마주했을 때는 표면적인 해결에 그치지 않고, 원인을 끝까지 <strong className="text-white">집요하게 탐구</strong>하며 본질적인 해답을 찾아내고자 합니다. 이러한 과정 속에서 작은 성취를 축적하며 스스로를 발전시켜 왔습니다.</p>
 
                 <p>저는 새로운 아이디어를 창의적으로 발굴하고, 이를 기술적으로 연결해 구체화하는 과정을 즐깁니다. 또한 팀원들과 유연하게 소통하며 협업하여 아이디어를 실제 결과물로 발전시키는 데 기여할 수 있습니다. 아울러 맡은 일은 끝까지 <strong className="text-white">책임감</strong> 있게 완수하여 프로젝트가 안정적으로 추진될 수 있도록 힘을 보태겠습니다.</p>

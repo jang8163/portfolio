@@ -11,7 +11,10 @@ export default function OutroSection() {
   return (
     <section 
       ref={sectionRef}
-      className="min-h-screen bg-gradient-to-b from-blue-900 to-slate-900 flex items-center justify-center relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      style={{
+        background: 'linear-gradient(to bottom, #2B5DD8 0%, #2B5DD8 30%, #2B5DD8 70%, #1A4BC7 100%)'
+      }}
     >
       {/* 배경 패턴 */}
       <div className="absolute inset-0 opacity-10">

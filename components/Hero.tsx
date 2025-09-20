@@ -23,13 +23,23 @@ export default function Hero(): React.JSX.Element {
 
   return (
     <section aria-label="Hero" className="relative h-screen flex flex-col" style={{
-      background: 'linear-gradient(to bottom, #FFFFFF 0%, #EBFCFF 30%, #022FAF 100%)'
+      backgroundImage: 'url(/back.png)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
     }}>
+      {/* 배경 오버레이 */}
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundColor: 'rgba(255, 255, 255, 0.89)' // opacity 0.11 = 1 - 0.89
+        }}
+      />
       {/* 이미지 */}
       <div 
         className="absolute inset-0 bg-center bg-no-repeat z-30"
         style={{
-          backgroundImage: 'url(/사진-removebg-preview.png)',
+          backgroundImage: 'url(/dex/2.jpg)',
           backgroundPosition: 'center 100%',
           backgroundSize: '220px',
           filter: 'drop-shadow(0 8px 20px rgba(0, 0, 0, 0.5)) drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4))'
@@ -68,8 +78,8 @@ export default function Hero(): React.JSX.Element {
           left: 'clamp(40px, 8vw, 120px)',
           bottom: 'clamp(120px, 24vh, 240px)',
           fontSize: 'clamp(10px, 1.4vw, 14px)',
-          color: '#9BC7F5',
-          fontWeight: '300',
+          color: '#4A7CE8',
+          fontWeight: '600',
           lineHeight: '1.2'
         }}
         initial={{ opacity: 0, x: -30 }}
@@ -128,7 +138,7 @@ export default function Hero(): React.JSX.Element {
             }}
             initial={{ opacity: 0.15, y: -40, scale: 2.5 }}
             animate={{ 
-              opacity: 0.5, 
+              opacity: 1, 
               y: 0, 
               scale: 1,
               transition: { 
@@ -138,7 +148,13 @@ export default function Hero(): React.JSX.Element {
               }
             }}
           >
-            <div className="font-extrabold leading-none text-blue-600">
+            <div 
+              className="font-extrabold leading-none" 
+              style={{ 
+                color: '#93C5FD',
+                letterSpacing: '-0.02em'
+              }}
+            >
               Creative Technologist
             </div>
           </motion.div>
@@ -181,7 +197,7 @@ export default function Hero(): React.JSX.Element {
           transition={{ delay: 3.0, duration: 0.5 }} // 3초 후에 시작
         >
           <div className="flex flex-col justify-center items-center font-medium tracking-wider" style={{ 
-            color: '#E3F2FF',
+            color: '#6B7280',
             fontSize: 'clamp(0.8rem, 2.2vw, 1.4rem)'
           }}>
             {lines.map((line, lineIndex) => (

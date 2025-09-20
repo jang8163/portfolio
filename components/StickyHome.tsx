@@ -577,9 +577,9 @@ export default function StickyHome() {
                     </h3>
                     <p className="text-gray-700 leading-relaxed">
                       {selectedProject === 1 
-                        ? '영어 학습자를 위한 종합적인 발음 연습 및 학습 플랫폼입니다. AI 기반 발음 평가 시스템과 체계적인 학습 콘텐츠를 통해 사용자의 영어 실력을 효과적으로 향상시킬 수 있도록 설계되었습니다.'
+                        ? 'LexiLearn은 AI 기반 영어 발음 연습 및 학습 플랫폼입니다. Web Speech API를 활용한 실시간 발음 평가와 체계적인 학습 콘텐츠를 통해 영어 실력을 효과적으로 향상시킬 수 있습니다. 표현 학습 5,400개와 단어 학습 1,350개로 구성된 풍부한 콘텐츠와 AI 기반 즉시 피드백 시스템을 제공합니다.'
                         : selectedProject === 2
-                        ? '음성만으로 건강 습관을 관리하고, 정서적 안정과 가벼운 운동까지 챙겨주는 개인 맞춤형 웰빙 에이전트입니다. 특히 복약 알림을 중심으로, 약 복용을 자주 잊는 노인·만성질환자·바쁜 직장인에게 큰 도움을 줍니다.'
+                        ? 'HealthVoice는 음성만으로 건강 습관을 관리하고, 정서적 안정과 가벼운 운동까지 챙겨주는 개인 맞춤형 웰빙 에이전트입니다. 특히 복약 알림을 중심으로, 약 복용을 자주 잊는 노인·만성질환자·바쁜 직장인에게 큰 도움을 줍니다. 여기에 건강 루틴 관리, 마음 케어, 간단 운동 코치 기능이 결합되어, 일상 속 건강을 자연스럽게 챙길 수 있습니다.'
                         : selectedProject === 3
                         ? '공개 API를 활용한 안전하고 합법적인 데이터 수집 방법을 학습하기 위한 교육용 프로젝트입니다. 실제 API 호출을 통해 패션 상품 데이터를 수집하고, 데이터 분석 및 시각화까지 제공하는 종합적인 데이터 사이언스 학습 플랫폼입니다. 특히 웹 스크래핑의 윤리적 측면을 강조하며, 공개 API만을 사용하여 완전히 합법적인 데이터 수집 방법을 제시합니다.'
                         : selectedProject === 5
@@ -588,6 +588,654 @@ export default function StickyHome() {
                       }
                     </p>
                   </div>
+
+                  {/* 주요 기능 섹션 - LexiLearn만 표시 */}
+                  {selectedProject === 1 && (
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                        <span className="mr-2">✨</span>주요 기능
+                      </h3>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div className="bg-blue-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-blue-900 mb-2">🗣️ AI 기반 발음 평가</h4>
+                          <ul className="text-sm text-blue-800 space-y-1">
+                            <li>• Web Speech API 활용한 실시간 음성 인식</li>
+                            <li>• 발음 정확도, 유창성, 전체 점수 종합 평가</li>
+                            <li>• 즉시 피드백 제공으로 학습 효과 극대화</li>
+                          </ul>
+                        </div>
+                        <div className="bg-green-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-green-900 mb-2">📚 체계적인 학습 콘텐츠</h4>
+                          <ul className="text-sm text-green-800 space-y-1">
+                            <li>• 표현 학습: 5,400개 (3레벨×6카테고리)</li>
+                            <li>• 단어 학습: 1,350개 (3레벨×30단계)</li>
+                            <li>• 체계적인 단계별 학습</li>
+                          </ul>
+                        </div>
+                        <div className="bg-purple-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-purple-900 mb-2">📊 진도 관리</h4>
+                          <ul className="text-sm text-purple-800 space-y-1">
+                            <li>• 실시간 학습 진행 상황 추적</li>
+                            <li>• 개인별 학습 통계 제공</li>
+                            <li>• 단계별 완료 상태 관리</li>
+                          </ul>
+                        </div>
+                        <div className="bg-orange-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-orange-900 mb-2">📝 오답 노트</h4>
+                          <ul className="text-sm text-orange-800 space-y-1">
+                            <li>• 표현 및 단어별 오답 기록</li>
+                            <li>• 맞춤형 복습 계획</li>
+                            <li>• 학습 효과 분석</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 기술 스택 섹션 - LexiLearn만 표시 */}
+                  {selectedProject === 1 && (
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                        <span className="mr-2">🛠️</span>기술 스택
+                      </h3>
+                      <div className="space-y-3">
+                        <div>
+                          <h4 className="font-medium text-gray-800 mb-2">Frontend</h4>
+                          <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Next.js 15.5.2</span>
+                            <span className="px-3 py-1 bg-cyan-100 text-cyan-800 text-sm rounded-full">React 19.1.0</span>
+                            <span className="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm rounded-full">TypeScript 5</span>
+                            <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">Tailwind CSS 3.4.0</span>
+                          </div>
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-gray-800 mb-2">브라우저 API</h4>
+                          <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">Web Speech API</span>
+                            <span className="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">LocalStorage</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 핵심 성과 섹션 - LexiLearn만 표시 */}
+                  {selectedProject === 1 && (
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                        <span className="mr-2">🚀</span>핵심 성과
+                      </h3>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div className="bg-blue-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-blue-900 mb-2">🎯 학습 효과</h4>
+                          <ul className="text-sm text-blue-800 space-y-1">
+                            <li>• <strong>개인화된 맞춤형 학습 경험</strong></li>
+                            <li>• <strong>실시간 발음 피드백으로 즉시 개선</strong></li>
+                            <li>• <strong>체계적인 단계별 실력 향상</strong></li>
+                          </ul>
+                        </div>
+                        <div className="bg-green-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-green-900 mb-2">🎯 기술적 성과</h4>
+                          <ul className="text-sm text-green-800 space-y-1">
+                            <li>• <strong>Web Speech API 활용</strong> - 브라우저 네이티브 음성 인식</li>
+                            <li>• <strong>체계적인 데이터 관리</strong> - TypeScript 인터페이스로 타입 안전성</li>
+                            <li>• <strong>확장 가능한 구조</strong> - 모듈화된 데이터 구조</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 주요 기능 섹션 - HealthVoice만 표시 */}
+                  {selectedProject === 2 && (
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                        <span className="mr-2">✨</span>주요 기능
+                      </h3>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div className="bg-blue-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-blue-900 mb-2">💊 복약 관리 (메인 기능)</h4>
+                          <ul className="text-sm text-blue-800 space-y-1">
+                            <li>• 스마트 복약 알림: 정해진 시간에 음성으로 복약 알림</li>
+                            <li>• 음성 복용 확인: "먹었어요" 음성 입력으로 복용 완료 처리</li>
+                            <li>• 누락 약 확인: "오늘 안 먹은 약은 아침 알약 하나입니다"</li>
+                            <li>• 복약 일정 관리: 약물별 복용 시간 및 횟수 설정</li>
+                          </ul>
+                        </div>
+                        <div className="bg-green-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-green-900 mb-2">🏃‍♂️ 건강 루틴 관리</h4>
+                          <ul className="text-sm text-green-800 space-y-1">
+                            <li>• 물 마시기 알림: 2시간마다 자동 수분 섭취 안내</li>
+                            <li>• 수면 기록: 음성으로 수면 시간 기록 및 캘린더 시각화</li>
+                            <li>• 혈압/혈당 기록: 음성 입력으로 수치 기록 및 상태 분석</li>
+                            <li>• 건강 데이터 시각화: 월별 캘린더로 건강 상태 한눈에 파악</li>
+                          </ul>
+                        </div>
+                        <div className="bg-purple-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-purple-900 mb-2">🧘‍♀️ 정서·멘탈 케어</h4>
+                          <ul className="text-sm text-purple-800 space-y-1">
+                            <li>• 마음 체크인: 하루 한 번 기분 이모지로 감정 기록</li>
+                            <li>• 명상·호흡 가이드: 3분/5분/10분 명상 및 호흡법 안내</li>
+                            <li>• 기분 일기: 텍스트로 상세한 감정 상태 기록</li>
+                            <li>• 동기부여 메시지: 복약/운동 완료 시 긍정 피드백 제공</li>
+                          </ul>
+                        </div>
+                        <div className="bg-orange-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-orange-900 mb-2">🏃‍♂️ 운동 & 활동 안내</h4>
+                          <ul className="text-sm text-orange-800 space-y-1">
+                            <li>• 가벼운 운동 루틴: 스트레칭, 유산소, 근력 운동 카테고리별 제공</li>
+                            <li>• 음성 카운트 코치: "스쿼트 1, 2, 3..." 실시간 운동 가이드</li>
+                            <li>• 활동 리마인드: 2시간마다 장시간 앉아있기 방지 알림</li>
+                            <li>• 운동 기록: 일일 운동 시간 및 종류 추적</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 기술 스택 섹션 - HealthVoice만 표시 */}
+                  {selectedProject === 2 && (
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                        <span className="mr-2">🛠️</span>기술 스택
+                      </h3>
+                      <div className="space-y-3">
+                        <div>
+                          <h4 className="font-medium text-gray-800 mb-2">Frontend</h4>
+                          <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">HTML5</span>
+                            <span className="px-3 py-1 bg-cyan-100 text-cyan-800 text-sm rounded-full">CSS3</span>
+                            <span className="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm rounded-full">JavaScript ES6+</span>
+                            <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">PWA</span>
+                          </div>
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-gray-800 mb-2">브라우저 API & 기능</h4>
+                          <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">Web Speech API</span>
+                            <span className="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">LocalStorage</span>
+                            <span className="px-3 py-1 bg-pink-100 text-pink-800 text-sm rounded-full">Service Worker</span>
+                            <span className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">브라우저 알림</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 핵심 성과 섹션 - HealthVoice만 표시 */}
+                  {selectedProject === 2 && (
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                        <span className="mr-2">🚀</span>핵심 성과
+                      </h3>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div className="bg-blue-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-blue-900 mb-2">🎯 사용자 경험</h4>
+                          <ul className="text-sm text-blue-800 space-y-1">
+                            <li>• <strong>음성 중심 인터페이스</strong> - 손이 불편한 사용자도 쉽게 사용</li>
+                            <li>• <strong>개인화된 건강 관리</strong> - 맞춤형 알림과 피드백</li>
+                            <li>• <strong>실시간 건강 모니터링</strong> - 즉시 상태 확인 및 기록</li>
+                          </ul>
+                        </div>
+                        <div className="bg-green-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-green-900 mb-2">🎯 기술적 성과</h4>
+                          <ul className="text-sm text-green-800 space-y-1">
+                            <li>• <strong>Web Speech API 활용</strong> - 브라우저 네이티브 음성 인식</li>
+                            <li>• <strong>PWA 구현</strong> - 네이티브 앱 수준의 사용자 경험</li>
+                            <li>• <strong>LocalStorage 활용</strong> - 오프라인에서도 데이터 보존</li>
+                            <li>• <strong>반응형 디자인</strong> - 모든 디바이스에서 최적화된 경험</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 실행화면 섹션 - LexiLearn만 표시 */}
+                  {selectedProject === 1 && (
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                        <span className="mr-2">🖥️</span>실행화면
+                      </h3>
+                      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
+                          <div 
+                            key={num} 
+                            className="relative group cursor-pointer"
+                            onClick={() => {
+                              console.log(`이미지 클릭: ${num}`);
+                              setSelectedImage(`/lexilearn/${num}.jpg`);
+                            }}
+                          >
+                            <img
+                              src={`/lexilearn/${num}.jpg`}
+                              alt={`LexiLearn 프로젝트 화면 ${num}`}
+                              className="w-full h-32 object-cover rounded-lg border border-gray-200 hover:border-blue-300 transition-colors"
+                              onError={(e) => {
+                                // 이미지 로드 실패 시 플레이스홀더 표시
+                                e.currentTarget.style.display = 'none';
+                                const placeholder = e.currentTarget.nextElementSibling as HTMLElement;
+                                if (placeholder) placeholder.style.display = 'flex';
+                              }}
+                            />
+                            <div 
+                              className="w-full h-32 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg border border-gray-200 hover:border-blue-300 transition-colors flex items-center justify-center absolute inset-0"
+                              style={{ display: 'none' }}
+                            >
+                              <div className="text-center">
+                                <div className="text-2xl mb-1">🗣️</div>
+                                <p className="text-sm font-medium text-gray-700">LexiLearn 화면 {num}</p>
+                              </div>
+                            </div>
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors rounded-lg flex items-center justify-center">
+                              <span className="opacity-0 group-hover:opacity-100 text-white text-sm font-medium transition-opacity">
+                                클릭하여 확대
+                              </span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                      <p className="text-sm text-gray-600 mt-3 text-center">
+                        💡 이미지를 클릭하면 크게 볼 수 있습니다
+                      </p>
+                    </div>
+                  )}
+
+                  {/* 실행화면 섹션 - HealthVoice만 표시 */}
+                  {selectedProject === 2 && (
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                        <span className="mr-2">🖥️</span>실행화면
+                      </h3>
+                      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        {[
+                          '메인 페이지.jpg',
+                          '건강 관리 - 수면.jpg',
+                          '건강 관리 - 수분.jpg',
+                          '건강 관리- 혈당_혈압.jpg',
+                          '마음 케어.jpg',
+                          '메인 페이지 - 응급.jpg',
+                          '약물 추가 후.jpg',
+                          '약물 추가.jpg',
+                          '운동코치.jpg',
+                          '음성 명령 듣는중.jpg'
+                        ].map((filename, index) => (
+                          <div 
+                            key={index} 
+                            className="relative group cursor-pointer"
+                            onClick={() => {
+                              console.log(`이미지 클릭: ${filename}`);
+                              setSelectedImage(`/health/${filename}`);
+                            }}
+                          >
+                            <img
+                              src={`/health/${filename}`}
+                              alt={`HealthVoice 화면 ${index + 1}`}
+                              className="w-full h-32 object-cover rounded-lg border border-gray-200 hover:border-blue-300 transition-colors"
+                              onError={(e) => {
+                                // 이미지 로드 실패 시 플레이스홀더 표시
+                                e.currentTarget.style.display = 'none';
+                                const placeholder = e.currentTarget.nextElementSibling as HTMLElement;
+                                if (placeholder) placeholder.style.display = 'flex';
+                              }}
+                            />
+                            <div 
+                              className="w-full h-32 bg-gradient-to-br from-green-100 to-blue-100 rounded-lg border border-gray-200 hover:border-blue-300 transition-colors flex items-center justify-center absolute inset-0"
+                              style={{ display: 'none' }}
+                            >
+                              <div className="text-center">
+                                <div className="text-2xl mb-1">🏥</div>
+                                <p className="text-sm font-medium text-gray-700">화면 {index + 1}</p>
+                              </div>
+                            </div>
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors rounded-lg flex items-center justify-center">
+                              <span className="opacity-0 group-hover:opacity-100 text-white text-sm font-medium transition-opacity">
+                                클릭하여 확대
+                              </span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                      <p className="text-sm text-gray-600 mt-3 text-center">
+                        💡 이미지를 클릭하면 크게 볼 수 있습니다
+                      </p>
+                    </div>
+                  )}
+
+                  {/* 주요 기능 섹션 - Musinsa Collector만 표시 */}
+                  {selectedProject === 3 && (
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                        <span className="mr-2">✨</span>주요 기능
+                      </h3>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div className="bg-blue-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-blue-900 mb-2">🌐 다중 API 데이터 수집</h4>
+                          <ul className="text-sm text-blue-800 space-y-1">
+                            <li>• FakeStore API: 완전 무료 패션 상품 데이터</li>
+                            <li>• DummyJSON API: 다양한 카테고리 뷰티/패션 상품</li>
+                            <li>• JSONPlaceholder API: 테스트용 모의 데이터 생성</li>
+                            <li>• 실시간 API 호출: 실제 HTTP 요청을 통한 데이터 수집</li>
+                          </ul>
+                        </div>
+                        <div className="bg-green-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-green-900 mb-2">📊 데이터 처리 & 분석</h4>
+                          <ul className="text-sm text-green-800 space-y-1">
+                            <li>• pandas DataFrame: 고성능 데이터 조작 및 분석</li>
+                            <li>• 데이터 정제: 다양한 API 형식을 표준화된 형태로 변환</li>
+                            <li>• 통계 분석: 평균, 분포, 상관관계 자동 계산</li>
+                            <li>• 데이터 시각화: matplotlib, seaborn을 활용한 차트 생성</li>
+                          </ul>
+                        </div>
+                        <div className="bg-purple-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-purple-900 mb-2">💾 파일 저장 & 내보내기</h4>
+                          <ul className="text-sm text-purple-800 space-y-1">
+                            <li>• Excel 저장: openpyxl을 활용한 다중 시트 Excel 파일</li>
+                            <li>• CSV 저장: UTF-8 인코딩으로 한글 완벽 지원</li>
+                            <li>• 자동 타임스탬프: 파일명에 수집 시간 자동 추가</li>
+                            <li>• 대용량 분할: 100개 단위 자동 분할 저장</li>
+                          </ul>
+                        </div>
+                        <div className="bg-orange-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-orange-900 mb-2">🎓 교육용 데모 시스템</h4>
+                          <ul className="text-sm text-orange-800 space-y-1">
+                            <li>• 샘플 데이터 생성: 실제 웹사이트 접근 없는 안전한 학습</li>
+                            <li>• Jupyter Notebook: 인터랙티브 데이터 분석 환경</li>
+                            <li>• 단계별 가이드: 초보자도 쉽게 따라할 수 있는 튜토리얼</li>
+                            <li>• 실무 스킬: 실제 개발에서 사용하는 API 호출 방법</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 기술 스택 섹션 - Musinsa Collector만 표시 */}
+                  {selectedProject === 3 && (
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                        <span className="mr-2">🛠️</span>기술 스택
+                      </h3>
+                      <div className="space-y-3">
+                        <div>
+                          <h4 className="font-medium text-gray-800 mb-2">Backend</h4>
+                          <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Python 3.7+</span>
+                            <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">requests</span>
+                            <span className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">pandas</span>
+                            <span className="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">openpyxl</span>
+                          </div>
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-gray-800 mb-2">Data Processing</h4>
+                          <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 bg-cyan-100 text-cyan-800 text-sm rounded-full">matplotlib</span>
+                            <span className="px-3 py-1 bg-pink-100 text-pink-800 text-sm rounded-full">seaborn</span>
+                            <span className="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm rounded-full">argparse</span>
+                          </div>
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-gray-800 mb-2">File Management</h4>
+                          <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">Excel 다중 시트</span>
+                            <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">CSV UTF-8</span>
+                            <span className="px-3 py-1 bg-red-100 text-red-800 text-sm rounded-full">자동 백업</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 핵심 성과 섹션 - Musinsa Collector만 표시 */}
+                  {selectedProject === 3 && (
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                        <span className="mr-2">🚀</span>핵심 성과
+                      </h3>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div className="bg-blue-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-blue-900 mb-2">🎯 사용자 경험</h4>
+                          <ul className="text-sm text-blue-800 space-y-1">
+                            <li>• <strong>완전 합법적</strong> - 공개 API만 사용하여 법적 문제 없음</li>
+                            <li>• <strong>실제 API 학습</strong> - 진짜 API 호출을 통한 실무 경험</li>
+                            <li>• <strong>다양한 API 활용</strong> - 여러 API를 통한 데이터 통합 학습</li>
+                            <li>• <strong>즉시 활용 가능</strong> - 수집된 데이터를 바로 분석 가능</li>
+                          </ul>
+                        </div>
+                        <div className="bg-green-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-green-900 mb-2">🎯 기술적 성과</h4>
+                          <ul className="text-sm text-green-800 space-y-1">
+                            <li>• <strong>API 호출 마스터</strong> - requests 라이브러리 완벽 활용</li>
+                            <li>• <strong>데이터 처리 전문가</strong> - pandas를 활용한 고급 데이터 조작</li>
+                            <li>• <strong>파일 관리 시스템</strong> - Excel/CSV 다중 형식 저장</li>
+                            <li>• <strong>오류 처리 시스템</strong> - 견고한 예외 처리 및 복구</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 실행화면 섹션 - Musinsa Collector만 표시 */}
+                  {selectedProject === 3 && (
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                        <span className="mr-2">🖥️</span>실행화면
+                      </h3>
+                      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        {[
+                          '1.jpg',
+                          '2.jpg',
+                          '3.jpg',
+                          '4.jpg',
+                          '베스트 결과.jpg',
+                          '설명 1.jpg',
+                          '패션 결과.jpg'
+                        ].map((filename, index) => (
+                          <div 
+                            key={index} 
+                            className="relative group cursor-pointer"
+                            onClick={() => {
+                              console.log(`이미지 클릭: ${filename}`);
+                              setSelectedImage(`/musinsa/${filename}`);
+                            }}
+                          >
+                            <img
+                              src={`/musinsa/${filename}`}
+                              alt={`Musinsa Collector 화면 ${index + 1}`}
+                              className="w-full h-32 object-cover rounded-lg border border-gray-200 hover:border-blue-300 transition-colors"
+                              onError={(e) => {
+                                // 이미지 로드 실패 시 플레이스홀더 표시
+                                e.currentTarget.style.display = 'none';
+                                const placeholder = e.currentTarget.nextElementSibling as HTMLElement;
+                                if (placeholder) placeholder.style.display = 'flex';
+                              }}
+                            />
+                            <div 
+                              className="w-full h-32 bg-gradient-to-br from-pink-100 to-purple-100 rounded-lg border border-gray-200 hover:border-blue-300 transition-colors flex items-center justify-center absolute inset-0"
+                              style={{ display: 'none' }}
+                            >
+                              <div className="text-center">
+                                <div className="text-2xl mb-1">🛍️</div>
+                                <p className="text-sm font-medium text-gray-700">Musinsa 화면 {index + 1}</p>
+                              </div>
+                            </div>
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors rounded-lg flex items-center justify-center">
+                              <span className="opacity-0 group-hover:opacity-100 text-white text-sm font-medium transition-opacity">
+                                클릭하여 확대
+                              </span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                      <p className="text-sm text-gray-600 mt-3 text-center">
+                        💡 이미지를 클릭하면 크게 볼 수 있습니다
+                      </p>
+                    </div>
+                  )}
+
+                  {/* 주요 기능 섹션 - Web Portfolio만 표시 */}
+                  {selectedProject === 5 && (
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                        <span className="mr-2">✨</span>주요 기능
+                      </h3>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div className="bg-blue-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-blue-900 mb-2">🎬 시네마틱한 인트로</h4>
+                          <ul className="text-sm text-blue-800 space-y-1">
+                            <li>• 전문적인 첫인상: 시네마틱한 인트로 오버레이</li>
+                            <li>• 자연스러운 전환: 메인 콘텐츠로 부드러운 이동</li>
+                            <li>• 브랜딩 강화: 개성 있는 메시지 전달</li>
+                          </ul>
+                        </div>
+                        <div className="bg-green-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-green-900 mb-2">🔄 인터랙티브 스크롤</h4>
+                          <ul className="text-sm text-green-800 space-y-1">
+                            <li>• 스크롤 기반 스토리텔링: 몰입감 있는 경험</li>
+                            <li>• Sticky 스크롤 효과: Home 고정 + About 슬라이드업</li>
+                            <li>• 부드러운 애니메이션: Framer Motion 활용</li>
+                          </ul>
+                        </div>
+                        <div className="bg-purple-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-purple-900 mb-2">📱 반응형 디자인</h4>
+                          <ul className="text-sm text-purple-800 space-y-1">
+                            <li>• 모든 디바이스 최적화: 모바일, 태블릿, 데스크톱</li>
+                            <li>• 유연한 레이아웃: clamp() 함수로 완벽한 반응형</li>
+                            <li>• 터치 친화적: 모바일 사용성 고려</li>
+                          </ul>
+                        </div>
+                        <div className="bg-orange-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-orange-900 mb-2">🎨 모던한 UI/UX</h4>
+                          <ul className="text-sm text-orange-800 space-y-1">
+                            <li>• 그라데이션과 그림자: 깊이감 있는 디자인</li>
+                            <li>• 일관된 색상 체계: 브랜드 아이덴티티</li>
+                            <li>• 직관적인 네비게이션: 사용자 친화적</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 기술 스택 섹션 - Web Portfolio만 표시 */}
+                  {selectedProject === 5 && (
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                        <span className="mr-2">🛠️</span>기술 스택
+                      </h3>
+                      <div className="space-y-3">
+                        <div>
+                          <h4 className="font-medium text-gray-800 mb-2">Frontend</h4>
+                          <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Next.js 15.5.2</span>
+                            <span className="px-3 py-1 bg-cyan-100 text-cyan-800 text-sm rounded-full">React 19.1.0</span>
+                            <span className="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm rounded-full">TypeScript 5</span>
+                            <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">Tailwind CSS 3.4.0</span>
+                          </div>
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-gray-800 mb-2">Animation & Interaction</h4>
+                          <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">Framer Motion 12.23.12</span>
+                            <span className="px-3 py-1 bg-pink-100 text-pink-800 text-sm rounded-full">CSS Transitions</span>
+                            <span className="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">Custom Hooks</span>
+                          </div>
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-gray-800 mb-2">Deployment & Tools</h4>
+                          <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Vercel</span>
+                            <span className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Git</span>
+                            <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">ESLint</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 핵심 성과 섹션 - Web Portfolio만 표시 */}
+                  {selectedProject === 5 && (
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                        <span className="mr-2">🚀</span>핵심 성과
+                      </h3>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div className="bg-blue-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-blue-900 mb-2">🎯 사용자 경험</h4>
+                          <ul className="text-sm text-blue-800 space-y-1">
+                            <li>• <strong>몰입감 있는 스토리텔링</strong> - 스크롤 기반 인터랙션</li>
+                            <li>• <strong>전문적인 첫인상</strong> - 시네마틱한 인트로 애니메이션</li>
+                            <li>• <strong>직관적인 네비게이션</strong> - 사용자 친화적 인터페이스</li>
+                            <li>• <strong>완벽한 반응형</strong> - 모든 디바이스에서 최적화</li>
+                          </ul>
+                        </div>
+                        <div className="bg-green-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-green-900 mb-2">🎯 기술적 성과</h4>
+                          <ul className="text-sm text-green-800 space-y-1">
+                            <li>• <strong>최신 기술 스택</strong> - Next.js 15, React 19 활용</li>
+                            <li>• <strong>고급 애니메이션</strong> - Framer Motion으로 부드러운 전환</li>
+                            <li>• <strong>타입 안전성</strong> - TypeScript로 안정적인 개발</li>
+                            <li>• <strong>성능 최적화</strong> - 빠른 로딩과 부드러운 애니메이션</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 실행화면 섹션 - Web Portfolio만 표시 */}
+                  {selectedProject === 5 && (
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                        <span className="mr-2">🖥️</span>실행화면
+                      </h3>
+                      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        {[
+                          '1.jpg',
+                          '2.jpg',
+                          '3.jpg',
+                          '4.jpg',
+                          '5.jpg',
+                          '6.jpg',
+                          '7.jpg'
+                        ].map((filename, index) => (
+                          <div 
+                            key={index} 
+                            className="relative group cursor-pointer"
+                            onClick={() => {
+                              console.log(`이미지 클릭: ${filename}`);
+                              setSelectedImage(`/dex/${filename}`);
+                            }}
+                          >
+                            <img
+                              src={`/dex/${filename}`}
+                              alt={`Web Portfolio 화면 ${index + 1}`}
+                              className="w-full h-32 object-cover rounded-lg border border-gray-200 hover:border-blue-300 transition-colors"
+                              onError={(e) => {
+                                // 이미지 로드 실패 시 플레이스홀더 표시
+                                e.currentTarget.style.display = 'none';
+                                const placeholder = e.currentTarget.nextElementSibling as HTMLElement;
+                                if (placeholder) placeholder.style.display = 'flex';
+                              }}
+                            />
+                            <div 
+                              className="w-full h-32 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg border border-gray-200 hover:border-blue-300 transition-colors flex items-center justify-center absolute inset-0"
+                              style={{ display: 'none' }}
+                            >
+                              <div className="text-center">
+                                <div className="text-2xl mb-1">💼</div>
+                                <p className="text-sm font-medium text-gray-700">Portfolio 화면 {index + 1}</p>
+                              </div>
+                            </div>
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors rounded-lg flex items-center justify-center">
+                              <span className="opacity-0 group-hover:opacity-100 text-white text-sm font-medium transition-opacity">
+                                클릭하여 확대
+                              </span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                      <p className="text-sm text-gray-600 mt-3 text-center">
+                        💡 이미지를 클릭하면 크게 볼 수 있습니다
+                      </p>
+                    </div>
+                  )}
                 </div>
 
                 {/* 모달 푸터 */}
@@ -617,7 +1265,12 @@ export default function StickyHome() {
           >
             {/* 헤더 */}
             <div className="flex justify-between items-center p-4 border-b">
-              <h3 className="text-lg font-semibold text-gray-900">LexiLearn 프로젝트 화면</h3>
+              <h3 className="text-lg font-semibold text-gray-900">
+                {selectedImage?.includes('/lexilearn/') ? 'LexiLearn 프로젝트 화면' : 
+                 selectedImage?.includes('/health/') ? 'HealthVoice 프로젝트 화면' :
+                 selectedImage?.includes('/musinsa/') ? 'Musinsa Collector 프로젝트 화면' :
+                 selectedImage?.includes('/dex/') ? 'Web Portfolio 프로젝트 화면' : '프로젝트 화면'}
+              </h3>
               <button
                 onClick={() => setSelectedImage(null)}
                 className="text-gray-500 hover:text-gray-700 text-2xl font-bold"
@@ -631,7 +1284,12 @@ export default function StickyHome() {
               <div className="bg-white rounded-lg overflow-hidden shadow-lg">
                 <img
                   src={selectedImage}
-                  alt="LexiLearn 프로젝트 화면 확대"
+                  alt={
+                    selectedImage?.includes('/lexilearn/') ? 'LexiLearn 프로젝트 화면 확대' : 
+                    selectedImage?.includes('/health/') ? 'HealthVoice 프로젝트 화면 확대' :
+                    selectedImage?.includes('/musinsa/') ? 'Musinsa Collector 프로젝트 화면 확대' :
+                    selectedImage?.includes('/dex/') ? 'Web Portfolio 프로젝트 화면 확대' : '프로젝트 화면 확대'
+                  }
                   className="w-full h-auto max-h-[60vh] object-contain"
                   onError={(e) => {
                     // 이미지 로드 실패 시 플레이스홀더 표시

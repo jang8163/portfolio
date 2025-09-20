@@ -2,6 +2,12 @@
 
 > **Creative Technologist를 꿈꾸는 프론트엔드 개발자 장원준의 인터랙티브 포트폴리오**
 
+## 🌐 사이트 바로가기
+
+**[🚀 포트폴리오 사이트 방문하기](https://portfolio-jang8163.vercel.app/)**
+
+> 💡 위 링크를 클릭하여 바로 포트폴리오를 체험해보세요!
+
 [![Next.js](https://img.shields.io/badge/Next.js-15.5.2-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.1.0-blue?style=flat-square&logo=react)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)

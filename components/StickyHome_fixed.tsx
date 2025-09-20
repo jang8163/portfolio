@@ -85,10 +85,10 @@ export default function StickyHome() {
                   <div className="relative">
                     <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden bg-white/20 border-4 border-white/30 shadow-2xl">
                       <Image
-                        src="/JANG.jpg"
+                        src="/photo.png"
                         alt="Jang Won Jun 프로필 사진"
-                        width={140}
-                        height={140}
+                        width={224}
+                        height={224}
                         className="w-full h-full object-cover"
                         priority
                       />
@@ -387,20 +387,18 @@ export default function StickyHome() {
               className="absolute inset-0 bg-center bg-no-repeat"
               style={{
                 backgroundImage: 'url(/unicon-removebg-preview.png)',
-                backgroundSize: '45%',
+                backgroundSize: '50%',
                 zIndex: -1
               }}
             />
             <div className="mx-auto max-w-4xl px-4">
               <h2 className="text-3xl md:text-4xl font-bold text-left mb-28 text-white">Experience?</h2>
-              <div className="space-y-4 text-gray-50 text-base leading-tight font-serif">
+              <div className="space-y-4 text-gray-50 text-base leading-normal">
                 <p>저는 아직 직접적인 프로젝트 경험은 많지 않고 모르는 부분도 많아 내세울 점은 부족합니다. 하지만 <strong className="text-white">꾸준한 학습과 성실한 태도</strong>를 통해 성장해 온 과정에 강한 자신감을 가지고 있으며, 새로운 환경에 적응하고 지식을 습득하는 데 빠른 편입니다. 문제를 마주했을 때는 표면적인 해결에 그치지 않고, 원인을 끝까지 <strong className="text-white">집요하게 탐구</strong>하며 본질적인 해답을 찾아내고자 합니다. 이러한 과정 속에서 작은 성취를 축적하며 스스로를 발전시켜 왔습니다.</p>
 
                 <p>저는 새로운 아이디어를 창의적으로 발굴하고, 이를 기술적으로 연결해 구체화하는 과정을 즐깁니다. 또한 팀원들과 유연하게 소통하며 협업하여 아이디어를 실제 결과물로 발전시키는 데 기여할 수 있습니다. 아울러 맡은 일은 끝까지 <strong className="text-white">책임감</strong> 있게 완수하여 프로젝트가 안정적으로 추진될 수 있도록 힘을 보태겠습니다.</p>
 
                 <p>무엇보다 <strong className="text-white">&ldquo;문제를 해결하여 행복을 이룬다&rdquo;</strong>라는 귀사의 비전은 저의 가치관과 깊이 맞닿아 있습니다. 저 역시 기술을 통해 사람들을 돕고, 더 많은 이들이 행복을 느낄 수 있는 경험을 만들어 가고 싶습니다. 그렇기에 단순히 회사의 구성원이 되는 것을 넘어, 같은 목표를 향해 함께 나아가며 의미 있는 성과를 이루고 싶습니다.</p>
-
-                <p><strong className="text-white">&ldquo;유니콘이 이상적인 기업을 상징하듯, 저는 비록 지금은 작은 시작이지만, 언젠가는 특별한 가치로 인정받는 사람이 되도록 최선을 다하겠습니다.&rdquo;</strong></p>
               </div>
             </div>
           </section>

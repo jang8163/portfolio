@@ -23,7 +23,7 @@ export default function Hero(): React.JSX.Element {
 
   return (
     <section aria-label="Hero" className="relative h-screen flex flex-col" style={{
-      background: 'linear-gradient(to bottom, #EBFCFF 0%, #022FAF 100%)'
+      background: 'linear-gradient(to bottom, #FFFFFF 0%, #EBFCFF 30%, #022FAF 100%)'
     }}>
       {/* 이미지 */}
       <div 
@@ -45,7 +45,7 @@ export default function Hero(): React.JSX.Element {
           fontSize: 'clamp(25px, 5.5vw, 75px)',
           whiteSpace: 'nowrap',
           letterSpacing: '-0.02em',
-          color: '#1A4BC7'
+          color: '#4A7CE8'
         }}
         initial={{ opacity: 0, x: -50 }}
         animate={{ 
@@ -68,7 +68,7 @@ export default function Hero(): React.JSX.Element {
           left: 'clamp(40px, 8vw, 120px)',
           bottom: 'clamp(120px, 24vh, 240px)',
           fontSize: 'clamp(10px, 1.4vw, 14px)',
-          color: '#7BB3F0',
+          color: '#9BC7F5',
           fontWeight: '300',
           lineHeight: '1.2'
         }}
@@ -173,16 +173,16 @@ export default function Hero(): React.JSX.Element {
         <motion.div
           className="absolute"
           style={{
-            bottom: 'clamp(40px, 6vh, 80px)',
-            right: 'clamp(80px, 15vw, 200px)'
+            bottom: 'clamp(80px, 16vh, 160px)',
+            right: 'clamp(60px, 12vw, 160px)'
           }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 3.0, duration: 0.5 }} // 3초 후에 시작
         >
           <div className="flex flex-col justify-center items-center font-medium tracking-wider" style={{ 
-            color: '#9BB5D8',
-            fontSize: 'clamp(0.7rem, 2vw, 1.25rem)'
+            color: '#E3F2FF',
+            fontSize: 'clamp(0.8rem, 2.2vw, 1.4rem)'
           }}>
             {lines.map((line, lineIndex) => (
               <motion.div

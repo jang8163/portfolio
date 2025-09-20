@@ -697,8 +697,8 @@ export default function StickyHome() {
                           <h4 className="font-semibold text-blue-900 mb-2">💊 복약 관리 (메인 기능)</h4>
                             <ul className="text-sm text-blue-800 space-y-1">
                             <li>• 스마트 복약 알림: 정해진 시간에 음성으로 복약 알림</li>
-                            <li>• 음성 복용 확인: "먹었어요" 음성 입력으로 복용 완료 처리</li>
-                            <li>• 누락 약 확인: "오늘 안 먹은 약은 아침 알약 하나입니다"</li>
+                            <li>• 음성 복용 확인: &ldquo;먹었어요&rdquo; 음성 입력으로 복용 완료 처리</li>
+                            <li>• 누락 약 확인: &ldquo;오늘 안 먹은 약은 아침 알약 하나입니다&rdquo;</li>
                             <li>• 복약 일정 관리: 약물별 복용 시간 및 횟수 설정</li>
                             </ul>
                           </div>
@@ -724,7 +724,7 @@ export default function StickyHome() {
                           <h4 className="font-semibold text-orange-900 mb-2">🏃‍♂️ 운동 & 활동 안내</h4>
                             <ul className="text-sm text-orange-800 space-y-1">
                             <li>• 가벼운 운동 루틴: 스트레칭, 유산소, 근력 운동 카테고리별 제공</li>
-                            <li>• 음성 카운트 코치: "스쿼트 1, 2, 3..." 실시간 운동 가이드</li>
+                            <li>• 음성 카운트 코치: &ldquo;스쿼트 1, 2, 3...&rdquo; 실시간 운동 가이드</li>
                             <li>• 활동 리마인드: 2시간마다 장시간 앉아있기 방지 알림</li>
                             <li>• 운동 기록: 일일 운동 시간 및 종류 추적</li>
                             </ul>

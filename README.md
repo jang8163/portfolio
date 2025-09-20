@@ -73,10 +73,11 @@ portfolio/
 ├── hooks/                        # 커스텀 훅
 │   └── useScrollSpy.ts          # 스크롤 스파이 기능
 ├── public/                       # 정적 자산
+│   ├── back.png                 # 메인 배경 이미지
 │   ├── JANG.jpg                 # 프로필 사진
 │   ├── unicon-removebg-preview.png # 유니콘 배경 이미지
-│   ├── dex/                     # Web Portfolio 이미지
-│   ├── lexilearn/               # LexiLearn 이미지
+│   ├── dex/                     # Web Portfolio 이미지 (1-7.jpg)
+│   ├── lexilearn/               # LexiLearn 이미지 (1-10.jpg)
 │   ├── health/                  # HealthVoice 이미지
 │   └── musinsa/                 # Musinsa Collector 이미지
 └── ...                          # 설정 파일들
@@ -165,6 +166,19 @@ npm start
 - **Framer Motion**: 부드럽고 자연스러운 전환
 - **스크롤 기반**: 사용자 인터랙션에 반응
 - **성능 최적화**: 60fps 유지
+
+## 🔄 최신 업데이트 (2025.01.08)
+
+### ✨ 새로운 기능
+- **Web Portfolio 모달**: 상세한 프로젝트 정보와 실행화면 추가
+- **메인 이미지 변경**: dex/2.jpg로 프로필 사진 교체
+- **배경 이미지**: back.png를 활용한 세련된 홈 배경
+- **실행화면 갤러리**: dex 폴더 이미지들을 Web Portfolio 실행화면으로 활용
+
+### 🛠️ 기술적 개선
+- **이미지 최적화**: 모든 프로젝트 이미지 경로 정리
+- **모달 시스템**: 프로젝트별 상세 정보 표시
+- **반응형 디자인**: 모든 디바이스에서 최적화된 경험
 
 ## 📧 연락처
 

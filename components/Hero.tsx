@@ -39,7 +39,7 @@ export default function Hero(): React.JSX.Element {
       <div 
         className="absolute inset-0 bg-center bg-no-repeat z-30"
         style={{
-          backgroundImage: 'url(/dex/2.jpg)',
+          backgroundImage: 'url(/사진-removebg-preview.png)',
           backgroundPosition: 'center 100%',
           backgroundSize: '220px',
           filter: 'drop-shadow(0 8px 20px rgba(0, 0, 0, 0.5)) drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4))'

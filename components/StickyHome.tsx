@@ -231,7 +231,7 @@ export default function StickyHome() {
                       />
                     ) : i === 5 ? (
                       <Image
-                        src="/dex/home.jpg"
+                        src="/dex/2.jpg"
                         alt="Web 포트폴리오 프로젝트 메인 화면"
                         width={400}
                         height={160}
@@ -591,45 +591,45 @@ export default function StickyHome() {
 
                   {/* 주요 기능 섹션 - LexiLearn만 표시 */}
                   {selectedProject === 1 && (
-                    <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
-                        <span className="mr-2">✨</span>주요 기능
-                      </h3>
-                      <div className="grid md:grid-cols-2 gap-4">
-                        <div className="bg-blue-50 p-4 rounded-lg">
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                      <span className="mr-2">✨</span>주요 기능
+                    </h3>
+                    <div className="grid md:grid-cols-2 gap-4">
+                          <div className="bg-blue-50 p-4 rounded-lg">
                           <h4 className="font-semibold text-blue-900 mb-2">🗣️ AI 기반 발음 평가</h4>
-                          <ul className="text-sm text-blue-800 space-y-1">
+                            <ul className="text-sm text-blue-800 space-y-1">
                             <li>• Web Speech API 활용한 실시간 음성 인식</li>
                             <li>• 발음 정확도, 유창성, 전체 점수 종합 평가</li>
                             <li>• 즉시 피드백 제공으로 학습 효과 극대화</li>
-                          </ul>
-                        </div>
-                        <div className="bg-green-50 p-4 rounded-lg">
+                            </ul>
+                          </div>
+                          <div className="bg-green-50 p-4 rounded-lg">
                           <h4 className="font-semibold text-green-900 mb-2">📚 체계적인 학습 콘텐츠</h4>
-                          <ul className="text-sm text-green-800 space-y-1">
-                            <li>• 표현 학습: 5,400개 (3레벨×6카테고리)</li>
-                            <li>• 단어 학습: 1,350개 (3레벨×30단계)</li>
-                            <li>• 체계적인 단계별 학습</li>
-                          </ul>
-                        </div>
-                        <div className="bg-purple-50 p-4 rounded-lg">
-                          <h4 className="font-semibold text-purple-900 mb-2">📊 진도 관리</h4>
-                          <ul className="text-sm text-purple-800 space-y-1">
-                            <li>• 실시간 학습 진행 상황 추적</li>
-                            <li>• 개인별 학습 통계 제공</li>
-                            <li>• 단계별 완료 상태 관리</li>
-                          </ul>
-                        </div>
-                        <div className="bg-orange-50 p-4 rounded-lg">
-                          <h4 className="font-semibold text-orange-900 mb-2">📝 오답 노트</h4>
-                          <ul className="text-sm text-orange-800 space-y-1">
-                            <li>• 표현 및 단어별 오답 기록</li>
-                            <li>• 맞춤형 복습 계획</li>
-                            <li>• 학습 효과 분석</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                            <ul className="text-sm text-green-800 space-y-1">
+                              <li>• 표현 학습: 5,400개 (3레벨×6카테고리)</li>
+                              <li>• 단어 학습: 1,350개 (3레벨×30단계)</li>
+                              <li>• 체계적인 단계별 학습</li>
+                            </ul>
+                          </div>
+                          <div className="bg-purple-50 p-4 rounded-lg">
+                            <h4 className="font-semibold text-purple-900 mb-2">📊 진도 관리</h4>
+                            <ul className="text-sm text-purple-800 space-y-1">
+                              <li>• 실시간 학습 진행 상황 추적</li>
+                              <li>• 개인별 학습 통계 제공</li>
+                              <li>• 단계별 완료 상태 관리</li>
+                            </ul>
+                          </div>
+                          <div className="bg-orange-50 p-4 rounded-lg">
+                            <h4 className="font-semibold text-orange-900 mb-2">📝 오답 노트</h4>
+                            <ul className="text-sm text-orange-800 space-y-1">
+                              <li>• 표현 및 단어별 오답 기록</li>
+                              <li>• 맞춤형 복습 계획</li>
+                              <li>• 학습 효과 분석</li>
+                            </ul>
+                          </div>
+                          </div>
+                          </div>
                   )}
 
                   {/* 기술 스택 섹션 - LexiLearn만 표시 */}
@@ -647,7 +647,7 @@ export default function StickyHome() {
                             <span className="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm rounded-full">TypeScript 5</span>
                             <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">Tailwind CSS 3.4.0</span>
                           </div>
-                        </div>
+                          </div>
                         <div>
                           <h4 className="font-medium text-gray-800 mb-2">브라우저 API</h4>
                           <div className="flex flex-wrap gap-2">
@@ -666,24 +666,24 @@ export default function StickyHome() {
                         <span className="mr-2">🚀</span>핵심 성과
                       </h3>
                       <div className="grid md:grid-cols-2 gap-4">
-                        <div className="bg-blue-50 p-4 rounded-lg">
+                          <div className="bg-blue-50 p-4 rounded-lg">
                           <h4 className="font-semibold text-blue-900 mb-2">🎯 학습 효과</h4>
-                          <ul className="text-sm text-blue-800 space-y-1">
+                            <ul className="text-sm text-blue-800 space-y-1">
                             <li>• <strong>개인화된 맞춤형 학습 경험</strong></li>
                             <li>• <strong>실시간 발음 피드백으로 즉시 개선</strong></li>
                             <li>• <strong>체계적인 단계별 실력 향상</strong></li>
-                          </ul>
-                        </div>
-                        <div className="bg-green-50 p-4 rounded-lg">
+                            </ul>
+                          </div>
+                          <div className="bg-green-50 p-4 rounded-lg">
                           <h4 className="font-semibold text-green-900 mb-2">🎯 기술적 성과</h4>
-                          <ul className="text-sm text-green-800 space-y-1">
+                            <ul className="text-sm text-green-800 space-y-1">
                             <li>• <strong>Web Speech API 활용</strong> - 브라우저 네이티브 음성 인식</li>
                             <li>• <strong>체계적인 데이터 관리</strong> - TypeScript 인터페이스로 타입 안전성</li>
                             <li>• <strong>확장 가능한 구조</strong> - 모듈화된 데이터 구조</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                            </ul>
+                          </div>
+                          </div>
+                          </div>
                   )}
 
                   {/* 주요 기능 섹션 - HealthVoice만 표시 */}
@@ -693,110 +693,110 @@ export default function StickyHome() {
                         <span className="mr-2">✨</span>주요 기능
                       </h3>
                       <div className="grid md:grid-cols-2 gap-4">
-                        <div className="bg-blue-50 p-4 rounded-lg">
+                          <div className="bg-blue-50 p-4 rounded-lg">
                           <h4 className="font-semibold text-blue-900 mb-2">💊 복약 관리 (메인 기능)</h4>
-                          <ul className="text-sm text-blue-800 space-y-1">
+                            <ul className="text-sm text-blue-800 space-y-1">
                             <li>• 스마트 복약 알림: 정해진 시간에 음성으로 복약 알림</li>
                             <li>• 음성 복용 확인: "먹었어요" 음성 입력으로 복용 완료 처리</li>
                             <li>• 누락 약 확인: "오늘 안 먹은 약은 아침 알약 하나입니다"</li>
                             <li>• 복약 일정 관리: 약물별 복용 시간 및 횟수 설정</li>
-                          </ul>
-                        </div>
-                        <div className="bg-green-50 p-4 rounded-lg">
+                            </ul>
+                          </div>
+                          <div className="bg-green-50 p-4 rounded-lg">
                           <h4 className="font-semibold text-green-900 mb-2">🏃‍♂️ 건강 루틴 관리</h4>
-                          <ul className="text-sm text-green-800 space-y-1">
+                            <ul className="text-sm text-green-800 space-y-1">
                             <li>• 물 마시기 알림: 2시간마다 자동 수분 섭취 안내</li>
                             <li>• 수면 기록: 음성으로 수면 시간 기록 및 캘린더 시각화</li>
                             <li>• 혈압/혈당 기록: 음성 입력으로 수치 기록 및 상태 분석</li>
                             <li>• 건강 데이터 시각화: 월별 캘린더로 건강 상태 한눈에 파악</li>
-                          </ul>
-                        </div>
-                        <div className="bg-purple-50 p-4 rounded-lg">
+                            </ul>
+                          </div>
+                          <div className="bg-purple-50 p-4 rounded-lg">
                           <h4 className="font-semibold text-purple-900 mb-2">🧘‍♀️ 정서·멘탈 케어</h4>
-                          <ul className="text-sm text-purple-800 space-y-1">
+                            <ul className="text-sm text-purple-800 space-y-1">
                             <li>• 마음 체크인: 하루 한 번 기분 이모지로 감정 기록</li>
                             <li>• 명상·호흡 가이드: 3분/5분/10분 명상 및 호흡법 안내</li>
                             <li>• 기분 일기: 텍스트로 상세한 감정 상태 기록</li>
                             <li>• 동기부여 메시지: 복약/운동 완료 시 긍정 피드백 제공</li>
-                          </ul>
-                        </div>
-                        <div className="bg-orange-50 p-4 rounded-lg">
+                            </ul>
+                          </div>
+                          <div className="bg-orange-50 p-4 rounded-lg">
                           <h4 className="font-semibold text-orange-900 mb-2">🏃‍♂️ 운동 & 활동 안내</h4>
-                          <ul className="text-sm text-orange-800 space-y-1">
+                            <ul className="text-sm text-orange-800 space-y-1">
                             <li>• 가벼운 운동 루틴: 스트레칭, 유산소, 근력 운동 카테고리별 제공</li>
                             <li>• 음성 카운트 코치: "스쿼트 1, 2, 3..." 실시간 운동 가이드</li>
                             <li>• 활동 리마인드: 2시간마다 장시간 앉아있기 방지 알림</li>
                             <li>• 운동 기록: 일일 운동 시간 및 종류 추적</li>
-                          </ul>
-                        </div>
-                      </div>
+                            </ul>
+                          </div>
                     </div>
+                  </div>
                   )}
 
                   {/* 기술 스택 섹션 - HealthVoice만 표시 */}
                   {selectedProject === 2 && (
-                    <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
-                        <span className="mr-2">🛠️</span>기술 스택
-                      </h3>
-                      <div className="space-y-3">
-                        <div>
-                          <h4 className="font-medium text-gray-800 mb-2">Frontend</h4>
-                          <div className="flex flex-wrap gap-2">
-                            <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">HTML5</span>
-                            <span className="px-3 py-1 bg-cyan-100 text-cyan-800 text-sm rounded-full">CSS3</span>
-                            <span className="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm rounded-full">JavaScript ES6+</span>
-                            <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">PWA</span>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                      <span className="mr-2">🛠️</span>기술 스택
+                    </h3>
+                    <div className="space-y-3">
+                          <div>
+                            <h4 className="font-medium text-gray-800 mb-2">Frontend</h4>
+                            <div className="flex flex-wrap gap-2">
+                              <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">HTML5</span>
+                              <span className="px-3 py-1 bg-cyan-100 text-cyan-800 text-sm rounded-full">CSS3</span>
+                              <span className="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm rounded-full">JavaScript ES6+</span>
+                              <span className="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">PWA</span>
+                            </div>
                           </div>
-                        </div>
-                        <div>
-                          <h4 className="font-medium text-gray-800 mb-2">브라우저 API & 기능</h4>
-                          <div className="flex flex-wrap gap-2">
-                            <span className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">Web Speech API</span>
-                            <span className="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">LocalStorage</span>
-                            <span className="px-3 py-1 bg-pink-100 text-pink-800 text-sm rounded-full">Service Worker</span>
-                            <span className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">브라우저 알림</span>
+                          <div>
+                            <h4 className="font-medium text-gray-800 mb-2">브라우저 API & 기능</h4>
+                            <div className="flex flex-wrap gap-2">
+                              <span className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">Web Speech API</span>
+                              <span className="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">LocalStorage</span>
+                              <span className="px-3 py-1 bg-pink-100 text-pink-800 text-sm rounded-full">Service Worker</span>
+                              <span className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">브라우저 알림</span>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                    </div>
+                            </div>
+                          </div>
                   )}
 
                   {/* 핵심 성과 섹션 - HealthVoice만 표시 */}
                   {selectedProject === 2 && (
-                    <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
-                        <span className="mr-2">🚀</span>핵심 성과
-                      </h3>
-                      <div className="grid md:grid-cols-2 gap-4">
-                        <div className="bg-blue-50 p-4 rounded-lg">
-                          <h4 className="font-semibold text-blue-900 mb-2">🎯 사용자 경험</h4>
-                          <ul className="text-sm text-blue-800 space-y-1">
-                            <li>• <strong>음성 중심 인터페이스</strong> - 손이 불편한 사용자도 쉽게 사용</li>
-                            <li>• <strong>개인화된 건강 관리</strong> - 맞춤형 알림과 피드백</li>
-                            <li>• <strong>실시간 건강 모니터링</strong> - 즉시 상태 확인 및 기록</li>
-                          </ul>
-                        </div>
-                        <div className="bg-green-50 p-4 rounded-lg">
-                          <h4 className="font-semibold text-green-900 mb-2">🎯 기술적 성과</h4>
-                          <ul className="text-sm text-green-800 space-y-1">
-                            <li>• <strong>Web Speech API 활용</strong> - 브라우저 네이티브 음성 인식</li>
-                            <li>• <strong>PWA 구현</strong> - 네이티브 앱 수준의 사용자 경험</li>
-                            <li>• <strong>LocalStorage 활용</strong> - 오프라인에서도 데이터 보존</li>
-                            <li>• <strong>반응형 디자인</strong> - 모든 디바이스에서 최적화된 경험</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                      <span className="mr-2">🚀</span>핵심 성과
+                    </h3>
+                    <div className="grid md:grid-cols-2 gap-4">
+                          <div className="bg-blue-50 p-4 rounded-lg">
+                            <h4 className="font-semibold text-blue-900 mb-2">🎯 사용자 경험</h4>
+                            <ul className="text-sm text-blue-800 space-y-1">
+                              <li>• <strong>음성 중심 인터페이스</strong> - 손이 불편한 사용자도 쉽게 사용</li>
+                              <li>• <strong>개인화된 건강 관리</strong> - 맞춤형 알림과 피드백</li>
+                              <li>• <strong>실시간 건강 모니터링</strong> - 즉시 상태 확인 및 기록</li>
+                            </ul>
+                          </div>
+                          <div className="bg-green-50 p-4 rounded-lg">
+                            <h4 className="font-semibold text-green-900 mb-2">🎯 기술적 성과</h4>
+                            <ul className="text-sm text-green-800 space-y-1">
+                              <li>• <strong>Web Speech API 활용</strong> - 브라우저 네이티브 음성 인식</li>
+                              <li>• <strong>PWA 구현</strong> - 네이티브 앱 수준의 사용자 경험</li>
+                              <li>• <strong>LocalStorage 활용</strong> - 오프라인에서도 데이터 보존</li>
+                              <li>• <strong>반응형 디자인</strong> - 모든 디바이스에서 최적화된 경험</li>
+                            </ul>
+                          </div>
+                          </div>
+                          </div>
                   )}
 
                   {/* 실행화면 섹션 - LexiLearn만 표시 */}
                   {selectedProject === 1 && (
-                    <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
                         <span className="mr-2">🖥️</span>실행화면
-                      </h3>
-                      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    </h3>
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
                           <div 
                             key={num} 
@@ -1230,11 +1230,11 @@ export default function StickyHome() {
                             </div>
                           </div>
                         ))}
-                      </div>
-                      <p className="text-sm text-gray-600 mt-3 text-center">
-                        💡 이미지를 클릭하면 크게 볼 수 있습니다
-                      </p>
                     </div>
+                    <p className="text-sm text-gray-600 mt-3 text-center">
+                      💡 이미지를 클릭하면 크게 볼 수 있습니다
+                    </p>
+                  </div>
                   )}
                 </div>
 

@@ -358,7 +358,7 @@ export default function StickyHome() {
                           <button
                             className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
                             onClick={() => {
-                              window.open('https://modern-yard-197363.framer.app/', '_blank');
+                              window.open('https://modern-yard-197363-edb81ef5f.framer.app/', '_blank');
                             }}
                           >
                             포트폴리오 보러가기
